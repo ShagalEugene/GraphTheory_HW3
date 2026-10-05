@@ -1,6 +1,6 @@
 {
   "stage": "clearing",
-  "generated_at": "2026-10-05T17:27:15.479579+00:00",
+  "generated_at": "2026-10-05T20:20:54.824927+00:00",
   "meta": {
     "quality_note": "Качественные метрики пока заглушки. Их можно реализовать через BaseQualityMetric.",
     "expected_quality_metrics": [

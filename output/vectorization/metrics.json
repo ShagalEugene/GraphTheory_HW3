@@ -1,6 +1,6 @@
 {
   "stage": "vectorization",
-  "generated_at": "2026-10-05T17:27:47.220012+00:00",
+  "generated_at": "2026-10-05T20:24:25.888297+00:00",
   "meta": {
     "quality_note": "Качественные метрики векторизации требуют эталонного набора запросов и релевантных чанков. Для таблиц отдельно проверяется покрытие структурированными таблицами из normalization.",
     "expected_quality_metrics": [
@@ -61,7 +61,7 @@
   "gauges": {
     "config": {
       "encoding": "utf-8",
-      "dense_model_path": "G:\\MISIS\\1\\GraphTheory\\HW3\\src\\models\\multilingual-e5-small",
+      "dense_model_path": "C:\\Users\\User\\Desktop\\projects\\GraphTheory_HW3\\models\\multilingual-e5-small",
       "dense_model_repo": "intfloat/multilingual-e5-small",
       "dense_model_auto_download": true,
       "dense_device": "cpu",

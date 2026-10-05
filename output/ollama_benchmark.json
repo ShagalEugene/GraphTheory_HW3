@@ -1,0 +1,87 @@
+{
+  "model": "qwen3.5:9b-q4_K_M",
+  "total_chunks": 169,
+  "samples": [
+    {
+      "request": 1,
+      "file": "ganoshenko.chunks.tokens.vectors.json",
+      "chunk_index": 96,
+      "input_chars": 1652,
+      "seconds": 75.72,
+      "load_seconds": 37.74,
+      "input_tokens": 1997,
+      "output_tokens": 515,
+      "tokens_per_second": 73.27,
+      "done_reason": "stop",
+      "entities": 0,
+      "relations": 0
+    },
+    {
+      "request": 2,
+      "file": "ganoshenko.chunks.tokens.vectors.json",
+      "chunk_index": 19,
+      "input_chars": 2000,
+      "seconds": 5.81,
+      "load_seconds": 0.0,
+      "input_tokens": 2003,
+      "output_tokens": 294,
+      "tokens_per_second": 92.37,
+      "done_reason": "stop",
+      "entities": 0,
+      "relations": 0
+    },
+    {
+      "request": 3,
+      "file": "vanadiy.chunks.tokens.vectors.json",
+      "chunk_index": 11,
+      "input_chars": 1970,
+      "seconds": 8.41,
+      "load_seconds": 0.0,
+      "input_tokens": 1944,
+      "output_tokens": 534,
+      "tokens_per_second": 92.47,
+      "done_reason": "stop",
+      "entities": 0,
+      "relations": 0
+    },
+    {
+      "request": 4,
+      "file": "vanadiy.chunks.tokens.vectors.json",
+      "chunk_index": 3,
+      "input_chars": 2000,
+      "seconds": 5.23,
+      "load_seconds": 0.0,
+      "input_tokens": 1988,
+      "output_tokens": 239,
+      "tokens_per_second": 92.93,
+      "done_reason": "stop",
+      "entities": 0,
+      "relations": 0
+    }
+  ],
+  "warm_mean_seconds": 6.48,
+  "graph_estimate_minutes": 18.3,
+  "placement": {
+    "models": [
+      {
+        "name": "qwen3.5:9b-q4_K_M",
+        "model": "qwen3.5:9b-q4_K_M",
+        "size": 5828646010,
+        "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.0B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-10-05T23:46:51.9269742+03:00",
+        "size_vram": 5828646010,
+        "context_length": 8192
+      }
+    ]
+  }
+}

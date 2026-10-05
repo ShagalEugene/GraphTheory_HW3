@@ -19,8 +19,9 @@ def run_stage(stage, input_dir: Path, output_root: Path):
 
 
 def main():
-    input_dir = Path("input")
-    output_root = Path("output")
+    project_root = Path(__file__).resolve().parent
+    input_dir = project_root / "input"
+    output_root = project_root / "output"
 
     abbreviations ={
         "ррт": "ppm",
@@ -52,7 +53,6 @@ def main():
 
     current_input = input_dir
 
-    project_root = Path(__file__).resolve().parent
     model_path = project_root / "models" / "multilingual-e5-small"
 
     graph_config = GraphBuildingConfig.from_json(
@@ -141,7 +141,7 @@ def main():
             output_root=output_root,
         )
 
-    print(current_input)
+    print(f"Graph: {output_root / 'knowledge_graph.graphml'}")
 
 
 if __name__ == "__main__":

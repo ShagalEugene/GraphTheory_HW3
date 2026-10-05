@@ -1,29 +1,40 @@
 {
   "stage": "graph_building",
-  "generated_at": "2026-10-05T17:24:20.125044+00:00",
+  "generated_at": "2026-10-05T20:44:43.694874+00:00",
   "meta": {},
   "counters": {
-    "files_processed": 4,
-    "llm_entities_returned": 0,
-    "llm_relations_returned": 0,
-    "chunks_processed": 169
+    "llm_entities_returned": 1359,
+    "llm_relations_returned": 787,
+    "entities_registered": 1298,
+    "dropped_invalid_entity": 61,
+    "relations_added": 456,
+    "dropped_unsupported_quote": 107,
+    "dropped_unresolved_source": 137,
+    "chunks_processed": 169,
+    "dropped_unresolved_target": 45,
+    "dropped_long_quote": 11,
+    "dropped_duplicate_relation": 27,
+    "relations_updated": 3,
+    "dropped_self_relation": 2,
+    "dropped_invalid_relation_type": 2,
+    "files_processed": 2
   },
   "gauges": {
     "config": {
       "encoding": "utf-8",
-      "llm_model_repo": "Qwen/Qwen3.5-7B-Instruct",
-      "llm_model_path": "models/qwen3.5-7b-instruct",
-      "llm_auto_download": true,
-      "llm_device": "cpu",
+      "llm_ollama_model": "qwen3.5:9b-q4_K_M",
+      "llm_ollama_url": "http://localhost:11434",
+      "llm_timeout_seconds": 600,
+      "llm_keep_alive": "30m",
+      "llm_context_tokens": 8192,
       "llm_max_new_tokens": 1024,
-      "llm_max_input_tokens": 2048,
       "llm_max_context_chars": 2000,
       "llm_temperature": 0.0,
       "llm_top_p": 1.0,
       "llm_repetition_penalty": 1.0,
       "prompt_dir": "configs",
       "extract_prompt_file": "extract.txt",
-      "prompt_file": "G:\\MISIS\\1\\GraphTheory\\HW3\\src\\configs\\extract.txt",
+      "prompt_file": "C:\\Users\\User\\Desktop\\projects\\GraphTheory_HW3\\configs\\extract.txt",
       "output_filename": "knowledge_graph",
       "output_suffix": ".graphml",
       "entity_types": [
@@ -64,17 +75,38 @@
       "store_edge_quote": false,
       "filter_labels": true
     },
-    "input_files": 4,
-    "total_nodes": 0,
-    "total_edges": 0,
-    "nodes_by_type": {},
-    "edges_by_type": {},
-    "dropped_total": 0
+    "input_files": 2,
+    "total_nodes": 599,
+    "total_edges": 456,
+    "nodes_by_type": {
+      "ИЗДЕЛИЕ": 27,
+      "МАТЕРИАЛ": 69,
+      "СВОЙСТВО": 72,
+      "МИКРОСТРУКТУРА": 114,
+      "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ": 27,
+      "ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС": 122,
+      "СОЕДИНЕНИЕ": 75,
+      "ПАРАМЕТР": 93
+    },
+    "edges_by_type": {
+      "СОДЕРЖИТ": 60,
+      "ТРЕБУЕТ": 18,
+      "УЛУЧШАЕТ": 85,
+      "ПРИМЕНЯЕТСЯ_В": 70,
+      "УХУДШАЕТ": 18,
+      "ВЛИЯЕТ_НА": 63,
+      "ПРЕВРАЩАЕТСЯ_В": 35,
+      "ФОРМИРУЕТ": 59,
+      "ИЗМЕРЯЕТСЯ": 19,
+      "ТОРМОЗИТ": 22,
+      "УСКОРЯЕТ": 7
+    },
+    "dropped_total": 392
   },
   "quality": {
-    "relations_per_chunk": 0.0,
-    "entities_per_chunk": 0.0,
-    "relation_acceptance_rate": null
+    "relations_per_chunk": 2.698224852071006,
+    "entities_per_chunk": 8.041420118343195,
+    "relation_acceptance_rate": 0.579415501905972
   },
   "per_file": []
 }
