@@ -21,7 +21,7 @@ dependencies = [
     "antlr4-python3-runtime==4.11.*",
     "tiktoken>=0.7",
     "langchain-text-splitters>=0.2",
-    "torch>=2.2",
+    "torch>=2.12",
     "sentence-transformers>=3.0",
     "transformers>=5.2",
     "accelerate>=0.30",
@@ -36,3 +36,11 @@ packages = ["pipeline"]
 
 [tool.uv]
 package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu130", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true

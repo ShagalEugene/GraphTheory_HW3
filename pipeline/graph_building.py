@@ -6,8 +6,11 @@ import logging
 from dataclasses import asdict, dataclass, fields
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 import networkx as nx
+from tqdm import tqdm
 
 from .base import BaseStage, MetricsCollector, StageContext
 
@@ -190,13 +193,13 @@ def _coerce_tuple(value: Any) -> Tuple[str, ...]:
 class GraphBuildingConfig:
     encoding: str = "utf-8"
 
-    llm_model_repo: str = "Qwen/Qwen2.5-7B-Instruct"
-    llm_model_path: str = "models/qwen-2.5-7b-instruct"
-    llm_auto_download: bool = True
-    llm_device: str = "cpu"
+    llm_ollama_model: str = "qwen3.5:9b-q4_K_M"
+    llm_ollama_url: str = "http://localhost:11434"
+    llm_timeout_seconds: float = 600
+    llm_keep_alive: str = "30m"
+    llm_context_tokens: int = 8192
 
     llm_max_new_tokens: int = 768
-    llm_max_input_tokens: int = 1024
     llm_max_context_chars: int = 1600
     llm_temperature: float = 0.0
     llm_top_p: float = 1.0
@@ -261,8 +264,12 @@ class GraphBuildingConfig:
             raise ValueError("relation_types must not be empty")
         if self.llm_max_new_tokens <= 0:
             raise ValueError("llm_max_new_tokens must be positive")
-        if self.llm_max_input_tokens <= 0:
-            raise ValueError("llm_max_input_tokens must be positive")
+        if self.llm_context_tokens <= self.llm_max_new_tokens:
+            raise ValueError("llm_context_tokens must exceed llm_max_new_tokens")
+        if self.llm_timeout_seconds <= 0:
+            raise ValueError("llm_timeout_seconds must be positive")
+        if not self.llm_ollama_model.strip():
+            raise ValueError("llm_ollama_model must not be empty")
         if self.llm_max_context_chars <= 0:
             raise ValueError("llm_max_context_chars must be positive")
         if self.max_new_entities <= 0:
@@ -348,10 +355,6 @@ class GraphBuildingConfig:
 class GraphBuildingStage(BaseStage):
     name = "graph_building"
 
-    _tokenizer: Optional[Any] = None
-    _model: Optional[Any] = None
-    _failed: bool = False
-
     def __init__(self, config: Optional[GraphBuildingConfig] = None) -> None:
         super().__init__(config or GraphBuildingConfig())
 
@@ -382,7 +385,10 @@ class GraphBuildingStage(BaseStage):
             )
 
     def list_input_files(self, ctx: StageContext) -> List[Path]:
-        return sorted(ctx.input_dir.glob("*.vectors.json"))
+        return sorted(
+            path for path in ctx.input_dir.glob("*.vectors.json")
+            if not path.name.endswith(".tables.vectors.json")
+        )
 
     def run(self, ctx: StageContext) -> Any:
         result = super().run(ctx)
@@ -405,7 +411,14 @@ class GraphBuildingStage(BaseStage):
         if not isinstance(chunks, list):
             return input_path
 
-        for chunk in chunks:
+        for chunk in tqdm(
+            chunks,
+            desc=f"[graph] {input_path.name.split('.')[0]}",
+            unit="chunk",
+            position=1,
+            leave=False,
+            dynamic_ncols=True,
+        ):
             if not isinstance(chunk, dict):
                 continue
 
@@ -594,6 +607,11 @@ class GraphBuildingStage(BaseStage):
             if not isinstance(item, list) or not item:
                 return
 
+            if isinstance(item[0], list):
+                for child in item:
+                    handle_item(child)
+                return
+
             kind = str(item[0]).strip().upper()
 
             if kind == "E" and len(item) >= 2:
@@ -641,41 +659,21 @@ class GraphBuildingStage(BaseStage):
                     }
                 )
 
-        parsed_any = False
-
-        for raw_line in text.splitlines():
-            line = raw_line.strip()
-
-            if not line:
-                continue
-
-            if line.startswith("```"):
-                continue
-
-            if not line.startswith("["):
-                continue
-
-            line = line.rstrip(",")
-
+        # Accept JSONL and wrapped arrays. If an outer array is incomplete,
+        # recover only its individually complete JSON records, never repair them.
+        decoder = json.JSONDecoder()
+        position = 0
+        while position < len(text):
+            start = text.find("[", position)
+            if start < 0:
+                break
             try:
-                item = json.loads(line)
+                item, end = decoder.raw_decode(text, start)
             except json.JSONDecodeError:
+                position = start + 1
                 continue
-
-            parsed_any = True
             handle_item(item)
-
-        if not parsed_any:
-            stripped = text.strip()
-            if stripped.startswith("[") and stripped.endswith("]"):
-                try:
-                    arr = json.loads(stripped)
-                except json.JSONDecodeError:
-                    arr = []
-
-                if isinstance(arr, list):
-                    for item in arr:
-                        handle_item(item)
+            position = end
 
         return (
             entities[: cfg.max_new_entities],
@@ -972,206 +970,61 @@ class GraphBuildingStage(BaseStage):
 
         return normalized_quote in normalized_chunk
 
-    def _load_llm(self) -> None:
-        cfg: GraphBuildingConfig = self.config
-
-        if GraphBuildingStage._failed:
-            return
-
-        if GraphBuildingStage._model is not None:
-            return
-
-        try:
-            import torch
-            from transformers import AutoModelForCausalLM, AutoTokenizer
-        except Exception as exc:
-            LOGGER.warning("Transformers or torch is unavailable: %s", exc)
-            GraphBuildingStage._failed = True
-            return
-
-        local_path = Path(cfg.llm_model_path).expanduser()
-
-        if (
-            not local_path.exists()
-            and cfg.llm_auto_download
-            and cfg.llm_model_repo
-        ):
-            try:
-                from huggingface_hub import snapshot_download
-
-                local_path.mkdir(parents=True, exist_ok=True)
-
-                try:
-                    snapshot_download(
-                        repo_id=cfg.llm_model_repo,
-                        local_dir=str(local_path),
-                        local_dir_use_symlinks=False,
-                    )
-                except TypeError:
-                    snapshot_download(
-                        repo_id=cfg.llm_model_repo,
-                        local_dir=str(local_path),
-                    )
-
-            except Exception as exc:
-                LOGGER.warning("LLM auto-download failed: %s", exc)
-
-        candidates: List[str] = []
-
-        if local_path.exists():
-            candidates.append(str(local_path))
-
-        if cfg.llm_model_repo:
-            candidates.append(cfg.llm_model_repo)
-
-        last_exception: Optional[Exception] = None
-
-        for candidate in candidates:
-            try:
-                tokenizer = AutoTokenizer.from_pretrained(
-                    candidate,
-                    trust_remote_code=True,
-                )
-
-                if tokenizer.pad_token is None:
-                    tokenizer.pad_token = tokenizer.eos_token
-
-                model_kwargs: Dict[str, Any] = {
-                    "trust_remote_code": True,
-                }
-
-                if cfg.llm_device == "cpu":
-                    model_kwargs["torch_dtype"] = torch.float32
-                    model_kwargs["low_cpu_mem_usage"] = True
-                else:
-                    model_kwargs["torch_dtype"] = "auto"
-                    model_kwargs["device_map"] = cfg.llm_device
-
-                model = AutoModelForCausalLM.from_pretrained(
-                    candidate,
-                    **model_kwargs,
-                )
-
-                model.eval()
-
-                GraphBuildingStage._tokenizer = tokenizer
-                GraphBuildingStage._model = model
-
-                LOGGER.info("LLM loaded from %s", candidate)
-                return
-
-            except Exception as exc:
-                last_exception = exc
-                LOGGER.warning("Failed to load LLM from %s: %s", candidate, exc)
-
-        LOGGER.warning(
-            "LLM loading failed. Last exception: %s",
-            last_exception,
-        )
-        GraphBuildingStage._failed = True
-
     def _generate(self, prompt: str) -> str:
         cfg: GraphBuildingConfig = self.config
-
-        self._load_llm()
-
-        if (
-            GraphBuildingStage._model is None
-            or GraphBuildingStage._tokenizer is None
-        ):
-            return ""
-
-        try:
-            import torch
-        except Exception as exc:
-            LOGGER.warning("Torch is unavailable: %s", exc)
-            return ""
-
-        tokenizer = GraphBuildingStage._tokenizer
-        model = GraphBuildingStage._model
-
-        messages = [
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ]
-
-        input_text = prompt
-
-        try:
-            if getattr(tokenizer, "chat_template", None):
-                input_text = tokenizer.apply_chat_template(
-                    messages,
-                    tokenize=False,
-                    add_generation_prompt=True,
-                )
-        except Exception:
-            input_text = prompt
-
-        try:
-            inputs = tokenizer(
-                input_text,
-                return_tensors="pt",
-                truncation=True,
-                max_length=cfg.llm_max_input_tokens,
-            )
-        except TypeError:
-            inputs = tokenizer(
-                input_text,
-                return_tensors="pt",
-                truncation=True,
-            )
-
-        device = getattr(model, "device", torch.device(cfg.llm_device))
-
-        inputs = {
-            key: value.to(device)
-            for key, value in inputs.items()
+        payload = {
+            "model": cfg.llm_ollama_model,
+            "messages": [{"role": "user", "content": prompt}],
+            "stream": False,
+            "think": False,
+            "keep_alive": cfg.llm_keep_alive,
+            "options": {
+                "num_ctx": cfg.llm_context_tokens,
+                "num_predict": cfg.llm_max_new_tokens,
+                "temperature": cfg.llm_temperature,
+                "top_p": cfg.llm_top_p,
+                "repeat_penalty": cfg.llm_repetition_penalty,
+            },
         }
-
-        eos_token_id = tokenizer.eos_token_id
-        if eos_token_id is None:
-            eos_token_id = getattr(model.config, "eos_token_id", None)
-
-        pad_token_id = tokenizer.pad_token_id
-        if pad_token_id is None:
-            pad_token_id = eos_token_id
-
-        generation_kwargs: Dict[str, Any] = {
-            "max_new_tokens": cfg.llm_max_new_tokens,
-            "pad_token_id": pad_token_id,
-            "eos_token_id": eos_token_id,
-        }
-
-        if cfg.llm_temperature > 0.0:
-            generation_kwargs["do_sample"] = True
-            generation_kwargs["temperature"] = cfg.llm_temperature
-            generation_kwargs["top_p"] = cfg.llm_top_p
-        else:
-            generation_kwargs["do_sample"] = False
-
-        if cfg.llm_repetition_penalty != 1.0:
-            generation_kwargs["repetition_penalty"] = cfg.llm_repetition_penalty
+        request = Request(
+            cfg.llm_ollama_url.rstrip("/") + "/api/chat",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
 
         try:
-            with torch.no_grad():
-                output_ids = model.generate(**inputs, **generation_kwargs)
-        except Exception as exc:
-            LOGGER.warning("LLM generation failed: %s", exc)
-            return ""
+            with urlopen(request, timeout=cfg.llm_timeout_seconds) as response:
+                result = json.loads(response.read().decode("utf-8"))
+        except HTTPError as exc:
+            detail = exc.read().decode("utf-8", errors="replace")
+            raise RuntimeError(
+                f"Ollama HTTP {exc.code}: {detail}. "
+                f"Check the model with: ollama pull {cfg.llm_ollama_model}"
+            ) from exc
+        except (URLError, TimeoutError) as exc:
+            raise RuntimeError(
+                f"Ollama request failed at {cfg.llm_ollama_url}: {exc}. "
+                "Start Ollama; if it is already running, check the request timeout."
+            ) from exc
 
-        input_length = inputs["input_ids"].shape[-1]
-        generated_ids = output_ids[0][input_length:]
+        if not isinstance(result, dict):
+            raise RuntimeError("Ollama returned an invalid response")
+        if result.get("error"):
+            raise RuntimeError(f"Ollama: {result['error']}")
+        if not result.get("done"):
+            raise RuntimeError("Ollama returned an incomplete response")
 
-        try:
-            return tokenizer.decode(
-                generated_ids,
-                skip_special_tokens=True,
+        message = result.get("message")
+        content = message.get("content") if isinstance(message, dict) else None
+        if not isinstance(content, str):
+            raise RuntimeError("Ollama response is missing message.content")
+        if result.get("done_reason") == "length":
+            LOGGER.warning(
+                "Ollama reached llm_max_new_tokens=%s; JSONL may be incomplete",
+                cfg.llm_max_new_tokens,
             )
-        except Exception as exc:
-            LOGGER.warning("LLM decoding failed: %s", exc)
-            return ""
+        return content
 
     def _save_graphml(self, output_dir: Path) -> None:
         cfg: GraphBuildingConfig = self.config
