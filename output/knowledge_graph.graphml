@@ -1,0 +1,3225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="string" />
+  <key id="d2" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d1" for="node" attr.name="label" attr.type="string" />
+  <key id="d0" for="node" attr.name="node_type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="N7796185fb3f9043a">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">магистральный газопровод</data>
+    </node>
+    <node id="N2860b27638698959">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">природный газ</data>
+    </node>
+    <node id="Nec1f9fddfc510f91">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь</data>
+    </node>
+    <node id="N4b6c91344b544655">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">ударная вязкость</data>
+    </node>
+    <node id="N4b16f1a2e6e14965">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">свариваемость</data>
+    </node>
+    <node id="N8631ff59f1c981f1">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь К65</data>
+    </node>
+    <node id="N9b5b42d8bcdb486e">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">газопроводная труба</data>
+    </node>
+    <node id="Nd1f7a0080c07b97e">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритно-перлитный структура</data>
+    </node>
+    <node id="Nd69991237cdf13a6">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">дисперсный ферритно-бейнитный структура</data>
+    </node>
+    <node id="Ne8990b213519fe31">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">C</data>
+    </node>
+    <node id="N62733e8a7d1b5abf">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Nb</data>
+    </node>
+    <node id="N2c435bcd61ca82c8">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">термомеханический контролировать прокатка</data>
+    </node>
+    <node id="N46a90e18f6f43fb9">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь ферритно-бейнитный класс</data>
+    </node>
+    <node id="N2128a90b42bef993">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Mo</data>
+    </node>
+    <node id="N9dcec96774b2bf3e">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">ударный вязкость</data>
+    </node>
+    <node id="N88bec102cfadfef1">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">ферритно-бейнитный класс</data>
+    </node>
+    <node id="N78fafe13b0a470fd">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">ферритно-перлитный класс</data>
+    </node>
+    <node id="N130fa4a40ae13206">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">термомеханическая обработка</data>
+    </node>
+    <node id="Na3278ede3011662f">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мелкодисперсная структура</data>
+    </node>
+    <node id="N76ed05cab0d92c44">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритно-бейнитная структура</data>
+    </node>
+    <node id="Nffb4b4f81be61469">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">механическое свойство</data>
+    </node>
+    <node id="Nd98888b2f9916657">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">ферритно-бейнитный сталь</data>
+    </node>
+    <node id="N7fd57944551a76fa">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мартенситно-аустенитный участок</data>
+    </node>
+    <node id="N4ebcfedb33b1bf41">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура отпуск</data>
+    </node>
+    <node id="N0c6d9b605e968501">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">термомеханический прокатка</data>
+    </node>
+    <node id="N0d3cc44c82f9d858">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">низколегированный сталь 05Г2МФБ</data>
+    </node>
+    <node id="Ne6f7c63551c94061">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">прямошовный газопроводный труба</data>
+    </node>
+    <node id="N6a73651f6d123521">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">05Г2МФБ</data>
+    </node>
+    <node id="Nc76e7080d8ce265b">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">газопроводный труба</data>
+    </node>
+    <node id="N3b8b1dd2a7a39c5f">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">металлофизический метод</data>
+    </node>
+    <node id="N6bcdcc6fa51e23df">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">фазовый состав</data>
+    </node>
+    <node id="Nd432c56f3ead05d1">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">оптический микроскопия</data>
+    </node>
+    <node id="N4691c26f9bea8076">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">механический свойство</data>
+    </node>
+    <node id="N4d41ffba091453af">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">C-Mn-Mo-Nb-V-сталь</data>
+    </node>
+    <node id="Nc70762be5a9be379">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">аустенитный структура</data>
+    </node>
+    <node id="N0020d3e3f8c78a9c">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">полиморфный γ→α-превращение</data>
+    </node>
+    <node id="N5f9a4e6b8056c035">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">бейнитный превращение</data>
+    </node>
+    <node id="Nb1109034f8759789">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мартенситный превращение</data>
+    </node>
+    <node id="N4e23527a6c2a2165">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">Горячий пластический деформация</data>
+    </node>
+    <node id="N707f565fb8f9f677">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">ТМКП с завершение деформация в межкритический γ+α-интервал</data>
+    </node>
+    <node id="N5db044e41ff58ac3">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура окончание прокатка</data>
+    </node>
+    <node id="N4904ef7ece6432bc">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">C-Mn-Mo-Nb-V-стали</data>
+    </node>
+    <node id="N1105da045cb0e1dd">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">предел текучесть</data>
+    </node>
+    <node id="N8ef5ae19a4a13d2d">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">10Г2ФБ</data>
+    </node>
+    <node id="N408d8ffb7bd41346">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">аустенит</data>
+    </node>
+    <node id="N167a7695dd7a7ad0">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">мартенсит</data>
+    </node>
+    <node id="Nf0af988c17c09405">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">бездиффузионный распад аустенит</data>
+    </node>
+    <node id="N7eacc345e1ffb9bf">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">диаграмма растяжение</data>
+    </node>
+    <node id="N6be413dc49b0b122">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">физический предел текучесть</data>
+    </node>
+    <node id="N6e611784012cc17c">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">К65</data>
+    </node>
+    <node id="N4317762b6028316e">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">хладостойкость</data>
+    </node>
+    <node id="N4d3f1e4776f02023">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">холодный трещина</data>
+    </node>
+    <node id="Na2e20d13fef42324">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритно-бейнитный структура</data>
+    </node>
+    <node id="N6740ed138d88ff0a">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">газопровод</data>
+    </node>
+    <node id="N2b44dc210d05e615">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">аустенитный зерно</data>
+    </node>
+    <node id="N6aafb441fe4353f3">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температурный режим деформация</data>
+    </node>
+    <node id="N93d5f896481c659f">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">толстолистовой реверсивный стан</data>
+    </node>
+    <node id="N661ef12cbf8d7ac4">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">дополнительный отпуск</data>
+    </node>
+    <node id="Nd45fe940fe243f31">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">трубный передел</data>
+    </node>
+    <node id="N279a8575c2640e00">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">малый пластический деформация</data>
+    </node>
+    <node id="N5ca0876614aaae9b">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">высокопрочный сталь</data>
+    </node>
+    <node id="N3c4f712b020f466c">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">труба магистральный газопровод</data>
+    </node>
+    <node id="Ne2292d6a3f1f8435">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">коррозия</data>
+    </node>
+    <node id="N474c2de369f6eb75">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">высокопрочная труба</data>
+    </node>
+    <node id="Naad1bb38d25547cd">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">производительность газопровод</data>
+    </node>
+    <node id="N62baa9eb60231bb9">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">внутренний диаметр газопровод</data>
+    </node>
+    <node id="N8d5305478ae6e564">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">рабочее давление газа</data>
+    </node>
+    <node id="Nae05faf6acd9a038">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">толщина стенки</data>
+    </node>
+    <node id="Nd68f7ea844019560">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">прочность стали</data>
+    </node>
+    <node id="Na8a839d01e6d22cb">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь X80</data>
+    </node>
+    <node id="N9bbb823dc06de822">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">К60 (X70)</data>
+    </node>
+    <node id="N91bffa34027b2aac">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">листовая сталь</data>
+    </node>
+    <node id="N29f99070e86bd2b8">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">прочность</data>
+    </node>
+    <node id="Nd3ef6865f764de7a">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">труба</data>
+    </node>
+    <node id="Nba343b890b9825d5">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">ударный вязкость KCV</data>
+    </node>
+    <node id="Na6637b493ed7ed56">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">доля волокно на образец ИПГ</data>
+    </node>
+    <node id="N4300dd4212dc0d11">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">хрупкий разрушение</data>
+    </node>
+    <node id="Ncb050c9a79cae346">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">магистральный трубопровод</data>
+    </node>
+    <node id="N5a284afe98b4bde7">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">химический состав</data>
+    </node>
+    <node id="Ncaa337138b4bd5eb">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">углеродный эквивалент</data>
+    </node>
+    <node id="Nccb5c2198e07f98b">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">параметр стойкость против растрескивание</data>
+    </node>
+    <node id="Ncb0798bbd8149ead">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">предел текучести</data>
+    </node>
+    <node id="N83cba7a43040d077">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">пластичность</data>
+    </node>
+    <node id="N2100c6994cf3b12e">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">перлит</data>
+    </node>
+    <node id="N0c64cfdc5636b465">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">низкоуглеродистый бейнит</data>
+    </node>
+    <node id="N2e4af603a349d1ba">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь 03Г1Б</data>
+    </node>
+    <node id="N87d0135923a1a22c">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Mn</data>
+    </node>
+    <node id="N3c5f66c1ceb077f4">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">кристаллизация</data>
+    </node>
+    <node id="N97bd43d93bcc2ea4">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">δ-феррит</data>
+    </node>
+    <node id="Nbdf2aa909e4f85e9">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">Неметаллические включения</data>
+    </node>
+    <node id="N86a14a4edf2ebcc9">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">высокопрочная низколегированная сталь</data>
+    </node>
+    <node id="N9000d8cd754bcca2">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">сульфид марганец</data>
+    </node>
+    <node id="Nc2960ed3a3461787">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">прокатка</data>
+    </node>
+    <node id="Nf6dd733f8f0ac7f4">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">расщепление</data>
+    </node>
+    <node id="Nfdd5274c791a1924">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">скорость охлаждение</data>
+    </node>
+    <node id="N6606efd0d98d9f70">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">Nb-V-содержащей стать</data>
+    </node>
+    <node id="N6555776b981e48fa">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритный зерно</data>
+    </node>
+    <node id="N4fdde3af85ca6481">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">высокая скорость охлаждения</data>
+    </node>
+    <node id="N67b2adf7f60751b9">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">низкая температура смотки</data>
+    </node>
+    <node id="N11002853c8763b47">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">обратимая отпускная хрупкость</data>
+    </node>
+    <node id="N56fcc24a6a0935cd">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">низколегированная высокопрочная сталь</data>
+    </node>
+    <node id="Nbbfa1a01632821b9">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">межкристаллитное разрушение</data>
+    </node>
+    <node id="N9f3f093fe9113f1b">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">жидкий металл</data>
+    </node>
+    <node id="N1fda77eeec808bfb">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">вода</data>
+    </node>
+    <node id="Nd601f0174de53798">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">твердый металл</data>
+    </node>
+    <node id="Naf7e6acdc5bdcee3">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">обратимый водородный охрупчивание</data>
+    </node>
+    <node id="Nad51497991e584de">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">диффузионно-подвижный водород</data>
+    </node>
+    <node id="N335b187f1219d7d2">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">классический отжиг</data>
+    </node>
+    <node id="N5a79a1da14367eaa">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура</data>
+    </node>
+    <node id="N357d12133d478ab6">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">необратимый охрупчивание</data>
+    </node>
+    <node id="N3f392c0e65d80429">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">молекулярный водород</data>
+    </node>
+    <node id="Na514c8731da7f946">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">дефект</data>
+    </node>
+    <node id="N4c6c09649ccf61fb">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">не сплошность</data>
+    </node>
+    <node id="N81649e3d988e7e82">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">непрерывнолить сляб</data>
+    </node>
+    <node id="N731f9056046ad520">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">водородный охрупчивание</data>
+    </node>
+    <node id="Nc5bf8d7421388a34">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">чистый сталь</data>
+    </node>
+    <node id="Nbc700fdc1112dec7">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">сульфидный включение</data>
+    </node>
+    <node id="N266e8e7e82b57cbb">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ликвация</data>
+    </node>
+    <node id="N67f6d7bb6ddfe8da">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">микротрещина</data>
+    </node>
+    <node id="N827b8caac6a90502">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">непрерывная разливка</data>
+    </node>
+    <node id="N187669190dc8a21b">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">содержание сера</data>
+    </node>
+    <node id="N35a513da69c88412">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">лист</data>
+    </node>
+    <node id="N830a1e202cbb9bcb">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">серы</data>
+    </node>
+    <node id="Nb53797f4d05b50d3">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">электромагнитное перемешивание</data>
+    </node>
+    <node id="N480e14be722ff8fb">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">вакуумная дегазация</data>
+    </node>
+    <node id="N0fab9fce7b3b38cc">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">модифицирование</data>
+    </node>
+    <node id="N2f587a6c063dff47">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">расплав</data>
+    </node>
+    <node id="N893ebfeee2361d37">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">содержание примесь и газ</data>
+    </node>
+    <node id="Nc8cd23bcbfcb2b15">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">вакуумирование жидкий стать</data>
+    </node>
+    <node id="N6b52083476177370">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">раскисление иметься в стать углерод</data>
+    </node>
+    <node id="N389b464666d0917b">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">структурный напряжение</data>
+    </node>
+    <node id="N1266779230329775">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">сплошность</data>
+    </node>
+    <node id="N3afb0cb0e62b1cf7">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">вязкость</data>
+    </node>
+    <node id="Nd8654f7b26f11c83">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">нитрид железо</data>
+    </node>
+    <node id="N274ddf14dcadd26e">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">твердость</data>
+    </node>
+    <node id="N68da72d26c5a7062">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">высокопрочный ниобийсодержащий сталь</data>
+    </node>
+    <node id="Neef6bc15ff5d036c">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">вязкий свойство</data>
+    </node>
+    <node id="N05308375fc33474d">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">прочностный характеристика</data>
+    </node>
+    <node id="N60e016d196acae2e">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">ТМКП</data>
+    </node>
+    <node id="N65d285efb23346a7">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Niobium</data>
+    </node>
+    <node id="N1cb71756cc991336">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Titanium</data>
+    </node>
+    <node id="N0fc26d5c2b5a5894">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Vanadium</data>
+    </node>
+    <node id="N65b804c0a64043da">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">Austenite</data>
+    </node>
+    <node id="N8db3ae8a1334cefb">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">Recrystallization</data>
+    </node>
+    <node id="N603e1a84e5903775">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">нитрид титана</data>
+    </node>
+    <node id="N6acf8c850aae02fd">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">рекристаллизация</data>
+    </node>
+    <node id="N8807582ef82917bb">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">карбид ниобия</data>
+    </node>
+    <node id="N749496fe0bb6a690">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">аустенит</data>
+    </node>
+    <node id="Nb26feefd1de03933">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">карбонитрид ниобий</data>
+    </node>
+    <node id="N098660002759b88b">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">деформация</data>
+    </node>
+    <node id="Nd306750c26638cc5">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">статический рекристаллизация</data>
+    </node>
+    <node id="N0df29b072e34e103">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">механическая прочность</data>
+    </node>
+    <node id="N2d45f6293ca45e7d">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">выделение ниобия</data>
+    </node>
+    <node id="N827aa29bcd819cbf">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">рекристаллизация горячедеформированный аустенит</data>
+    </node>
+    <node id="Nc57d2b61cf8ef612">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">структура металл</data>
+    </node>
+    <node id="N61a988349d679042">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">удельный эффективный поверхность</data>
+    </node>
+    <node id="Nd6937c23c8d27999">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">аустенитная структура</data>
+    </node>
+    <node id="N3c83e6a9b984f90c">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">низколегированная сталь</data>
+    </node>
+    <node id="Nea522ab00a2756fe">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">малоперлитный сталь</data>
+    </node>
+    <node id="N37374cb8f316c7a7">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">бейнит</data>
+    </node>
+    <node id="Naf38faf4df13a8c9">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">дисперсионный упрочнение</data>
+    </node>
+    <node id="N70332535ad09151c">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">сопротивление хрупкий разрушение</data>
+    </node>
+    <node id="Nfb087f2ccc74bdde">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">измельчение зерно</data>
+    </node>
+    <node id="N4cdc10c55b11a5b9">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">нитрид</data>
+    </node>
+    <node id="N886d0f8524fa57b6">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">Свойство прочности</data>
+    </node>
+    <node id="N84a27b8c6d472581">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">аустенитизация</data>
+    </node>
+    <node id="Nd952393f1b8c6a1a">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура нагрева</data>
+    </node>
+    <node id="Nb9c08e76df736ce9">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">величина зерно</data>
+    </node>
+    <node id="Ncec38823af812cde">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">химический состав твёрдый раствор</data>
+    </node>
+    <node id="N2281cfafdc3c8993">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">нитрид титан</data>
+    </node>
+    <node id="N4dfe3bbfc4fca8a0">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">рост зерно</data>
+    </node>
+    <node id="N86e47e2ac57eeaa3">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">предварительный прокатка</data>
+    </node>
+    <node id="N1c77111a2fc39025">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мелкозернистый аустенитный структура</data>
+    </node>
+    <node id="N911d30c96088eb09">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">деформационный упрочнение</data>
+    </node>
+    <node id="Naea38cd53af72e2d">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">статический возврат</data>
+    </node>
+    <node id="Na94ab0fb79cd8a04">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">статическая рекристаллизация</data>
+    </node>
+    <node id="N433ab1796be72e4b">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">легирование</data>
+    </node>
+    <node id="N08aad604e5fc404c">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">рекристаллизация аустенита</data>
+    </node>
+    <node id="Nad9f08cd52d1a1a9">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">высокотемпературный контролировать прокатка</data>
+    </node>
+    <node id="N081d66c7207ec088">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">низкотемпературный контролировать прокатка</data>
+    </node>
+    <node id="N759f7b3b735b30cc">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">статический рекристаллизация аустенит</data>
+    </node>
+    <node id="N014f8fb825d07180">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">α-фаза</data>
+    </node>
+    <node id="Ndf64a6499ddf45cd">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">γ→α-превращение</data>
+    </node>
+    <node id="Na75c5f3d8496e847">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">скорость охлаждения</data>
+    </node>
+    <node id="N111c6c247dbcee4d">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">высокопрочный хладостойкий трубный сталь</data>
+    </node>
+    <node id="N85b5b656e3e2d3ef">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">деформация нерекристаллизовать аустенит</data>
+    </node>
+    <node id="Nae4de44be17eaa5b">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">феррит</data>
+    </node>
+    <node id="N8d66751bb9fb264f">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">окончательный прокатка</data>
+    </node>
+    <node id="N3fc05ef5ffbb69ab">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">конечный структура металл</data>
+    </node>
+    <node id="N6140d1f911b81844">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">зерно</data>
+    </node>
+    <node id="N4b3a064d4160d850">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритно-перлитная структура</data>
+    </node>
+    <node id="Ne030a9a356762ee5">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">микроструктура</data>
+    </node>
+    <node id="N7b7acbce8afb6c06">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">ускоренное охлаждение</data>
+    </node>
+    <node id="N3a48b806d852eef9">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">низкотемпературный контролируемый прокатка</data>
+    </node>
+    <node id="N70a7fdb8c4fe6b96">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">развитая субструктура</data>
+    </node>
+    <node id="N7360f4ea928ba89c">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">деформировать феррит</data>
+    </node>
+    <node id="N189a86669de1c75a">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">механический свойство стать</data>
+    </node>
+    <node id="Na208a8598901e55b">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">ускоренный охлаждение</data>
+    </node>
+    <node id="Ne73c58d83f00d397">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь 05Г2МФБ</data>
+    </node>
+    <node id="N80d306a1b1a87e48">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура нагрев</data>
+    </node>
+    <node id="N169da9335728cfeb">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">параметр предварительный прокатка</data>
+    </node>
+    <node id="N4968f8b6895cf638">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">отпуск</data>
+    </node>
+    <node id="Nd8c45e3a2238a03a">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">микролегирование</data>
+    </node>
+    <node id="N2392fa6a6fd8006b">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритно-перлитный</data>
+    </node>
+    <node id="Nae4d126a2af69007">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">структура с повышенный плотность дислокация и развитой субструктура</data>
+    </node>
+    <node id="Nb42fda197e019a35">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Manganese</data>
+    </node>
+    <node id="N9d3509a11fbe2735">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Carbon</data>
+    </node>
+    <node id="N3fc2c5299c373b44">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Sulfur</data>
+    </node>
+    <node id="N471e43b567da6a58">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Molybdenum</data>
+    </node>
+    <node id="N25f6ea0cfc6dfd5c">
+      <data key="d0">ХИМИЧЕСКИЙ_ЭЛЕМЕНТ</data>
+      <data key="d1">Nickel</data>
+    </node>
+    <node id="N87752dda655f8f19">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">Харцызский трубный завод</data>
+    </node>
+    <node id="Nf9fb5c273744c443">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">оптический микроскоп</data>
+    </node>
+    <node id="N3a1f8b4beaa90f30">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">металлографический шлиф</data>
+    </node>
+    <node id="N759cddd79a244d30">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">электронный микроскоп</data>
+    </node>
+    <node id="N0eadd5f65d37daf4">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">фольга</data>
+    </node>
+    <node id="Na524e5014342d360">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">электролитический полировка</data>
+    </node>
+    <node id="Nf5ef88e796441d6e">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">рентгеновский дифрактометр</data>
+    </node>
+    <node id="N16a3b21b1a1a48db">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">рентгеновский дифрактометр ДРОН-3</data>
+    </node>
+    <node id="N2b6eebc306520dc9">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">шлиф сечение</data>
+    </node>
+    <node id="Nd94f7abf04a9a6c4">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">азотный кислота</data>
+    </node>
+    <node id="N6ae92d4c38bb3caa">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">поверхностный наклепать слой</data>
+    </node>
+    <node id="Na016c755fdc3570f">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">горячедеформированный аустенит</data>
+    </node>
+    <node id="N2f4e8f40d960e0c2">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">нагрев и деформация</data>
+    </node>
+    <node id="N656a459aea6401f0">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">лабораторный прокатный установка</data>
+    </node>
+    <node id="Na26768588d0d40e4">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">микропечь</data>
+    </node>
+    <node id="N0e6a6ff30795cbe7">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">термопара</data>
+    </node>
+    <node id="N11188ef75be45f49">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">отверстие</data>
+    </node>
+    <node id="N56d3156c3b3b3e76">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">дифференциальный термический кривая</data>
+    </node>
+    <node id="N1d60576c848b049e">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">имитация термический условие сварка</data>
+    </node>
+    <node id="N01040bc2efef6ebc">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">основное металл</data>
+    </node>
+    <node id="N445bfd6af6a9b9ce">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">термокинетический диаграмма превращение аустенит</data>
+    </node>
+    <node id="Nf5d525e88ce8422a">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">трубчатый образец</data>
+    </node>
+    <node id="N1931d11c1d2d5c27">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">высокий частота ток</data>
+    </node>
+    <node id="N7b1b6246a28b6c3a">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">инертный газ</data>
+    </node>
+    <node id="N3baea12691cc9b17">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">время t нагрев образец от Ac*3 до Tm*(a*x)</data>
+    </node>
+    <node id="N1958f76e1ab8388a">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">изменение объём образца</data>
+    </node>
+    <node id="Nbd1f52627173469c">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">коэффициент тепловой расширения</data>
+    </node>
+    <node id="N81d6768e46d9e813">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">ударный изгиб</data>
+    </node>
+    <node id="Nae8918b62b2903cc">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мелкозернистая структура</data>
+    </node>
+    <node id="N0704ae246acee2d2">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">термомеханический контролируемый прокатка</data>
+    </node>
+    <node id="N25ab7a4dc319b10f">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">пластическая деформация аустенит</data>
+    </node>
+    <node id="N31ed0cee38196762">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">горячая прокатка</data>
+    </node>
+    <node id="N3fabab3190946e2d">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">контролируемая прокатка</data>
+    </node>
+    <node id="N8d032b6730db75aa">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">аустенитное зерно</data>
+    </node>
+    <node id="Nf5c5490323d68155">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">карбонитрид ниобия</data>
+    </node>
+    <node id="N910720a60d9fcfa0">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">карбонитрид ванадия</data>
+    </node>
+    <node id="Nd0de921c1906fd75">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">нагрев</data>
+    </node>
+    <node id="Nfd9d4c4a6e134505">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">стоп-закалка</data>
+    </node>
+    <node id="N75836c1059293f5c">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">вытянутый вдоль направление прокатка нерекристаллизовать аустенитный структура</data>
+    </node>
+    <node id="Nc339da23fbebbb2d">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мелкий равноосный</data>
+    </node>
+    <node id="N888bd4f9b349d998">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">нагрев образец до температура 1423,15 K</data>
+    </node>
+    <node id="N665134d3fa7d0562">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритное зерно</data>
+    </node>
+    <node id="Nc687b3e172148b16">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">пластическая деформация</data>
+    </node>
+    <node id="Nff4f46c96fd1b694">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">выделение феррита</data>
+    </node>
+    <node id="Na80a9107fb7d7ac6">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">γ+α-область</data>
+    </node>
+    <node id="Ne98c2312ca995d27">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">бейнитная область</data>
+    </node>
+    <node id="N63128b4c2fc1fc38">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">мартенситная область</data>
+    </node>
+    <node id="Nb6813dab33789b80">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">измельчение зерно</data>
+    </node>
+    <node id="N1898f4c2e2d0547b">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">упрочнение феррит</data>
+    </node>
+    <node id="N4881f910a0e0ed8c">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">термомеханический обработка</data>
+    </node>
+    <node id="N1ac69bdfca5cfd49">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">аустенитный γ-область</data>
+    </node>
+    <node id="Nf7ab45625502fa1f">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">двухфазный γ+α-область</data>
+    </node>
+    <node id="Nc7c6588c1bc2e4bd">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">низколегированный сталь</data>
+    </node>
+    <node id="N82bdc7a98df2bf78">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">γ-область</data>
+    </node>
+    <node id="N388ae03ed0dc4ab6">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">межкритический область</data>
+    </node>
+    <node id="Nf2f241f2ea4eb4e7">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">деформировать аустенит</data>
+    </node>
+    <node id="Nd9651d9beb6c88f4">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">недеформированный аустенит</data>
+    </node>
+    <node id="N4a336ebec4039cb2">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">охлаждение</data>
+    </node>
+    <node id="N15e475d3f6297db4">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритная область</data>
+    </node>
+    <node id="Ndfd10e3261be5f41">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">перлитная область</data>
+    </node>
+    <node id="Nd496d2e9ea89100b">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь 10Г2ФБ</data>
+    </node>
+    <node id="N71824dc85714193b">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритно-бейнитно-мартенситная структура</data>
+    </node>
+    <node id="N3ce8b1c7655d3b60">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мартенситная структура</data>
+    </node>
+    <node id="N7f82fcb2ffccedba">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">бейнитная структура</data>
+    </node>
+    <node id="Nfa890da4819af161">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">недеформированный образец</data>
+    </node>
+    <node id="Nce46b047692f21a3">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">деформировать образец</data>
+    </node>
+    <node id="Nfc0225a51d49d250">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">механический свойство лист</data>
+    </node>
+    <node id="Nb1796097328b64cb">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">временной сопротивление</data>
+    </node>
+    <node id="N50a484189abc5237">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">временное сопротивление</data>
+    </node>
+    <node id="N870aaf0a119b1313">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">сталь плавка 2</data>
+    </node>
+    <node id="N9b87a891f20a65d5">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">диаграмма напряжение-деформация</data>
+    </node>
+    <node id="Ne5c14975c4866140">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">физический предел текучести</data>
+    </node>
+    <node id="N4d1e463ba3397b2f">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">Nb(C,N)</data>
+    </node>
+    <node id="N83b23d0f9406d4e5">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">завершение деформация в межкритический γ+α-область</data>
+    </node>
+    <node id="N70b814911cea41b4">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">молибденсодержащий плавка</data>
+    </node>
+    <node id="N6541ed07d8df2855">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">ГОСТ 1497</data>
+    </node>
+    <node id="N66bb914d17cec220">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">ТТ 232-02-2003</data>
+    </node>
+    <node id="N9f5b6190137c6713">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">относительный удлинение</data>
+    </node>
+    <node id="N8c78216b25017efa">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">условный предел текучесть</data>
+    </node>
+    <node id="Nde34cf8328b8d883">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">пластический деформация</data>
+    </node>
+    <node id="N35d1cff5afc4485b">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">диаграмма нагрузка-деформация</data>
+    </node>
+    <node id="N0b252a12cf9fb9e5">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">площадка текучесть</data>
+    </node>
+    <node id="Nb337896fccd85a03">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">бейнитно-мартенситный участок</data>
+    </node>
+    <node id="N101365fc7fb6cf44">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">высокий отпуск</data>
+    </node>
+    <node id="N28c0ce802c1068f5">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">нагрев в межкритический область</data>
+    </node>
+    <node id="N8298de15a39498c0">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">форма диаграмма растяжение</data>
+    </node>
+    <node id="Nca81fb82507f6016">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">цементит</data>
+    </node>
+    <node id="N016cb5eaedda7255">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">остаточный аустенит</data>
+    </node>
+    <node id="N412acff9b58d70bc">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">феррит рекристаллизовать</data>
+    </node>
+    <node id="N4af41dd00e277b1a">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">относительное удлинение</data>
+    </node>
+    <node id="N5c645e0cf5618aae">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">упруго-пластический поведение</data>
+    </node>
+    <node id="N6ce62045f3b4db06">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">холодный трещина</data>
+    </node>
+    <node id="N2737a41089ecd0e2">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">автоматическая сварка под флюс</data>
+    </node>
+    <node id="Nfc141044bda55ad1">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">ручная дуговая сварка</data>
+    </node>
+    <node id="Nc13615b11800348e">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">критическая твёрдость</data>
+    </node>
+    <node id="Nb8b4d67659446f8a">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура испытание</data>
+    </node>
+    <node id="N2a6caef0e6cb6e4e">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">ударный вязкость ОШЗ</data>
+    </node>
+    <node id="N418c740702b19a88">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мартенсит реечный морфология</data>
+    </node>
+    <node id="N224781c30372a1bb">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">сварочный трещина</data>
+    </node>
+    <node id="N1d197390f39674fe">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">ферритно-бейнитный</data>
+    </node>
+    <node id="N83192f39ee99a700">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">осевой трещина</data>
+    </node>
+    <node id="Nbf2bb2fc681fa263">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">прокатка лист</data>
+    </node>
+    <node id="N50c885239f501cdc">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">механический свойство растяжение</data>
+    </node>
+    <node id="Nfbcd820796e659eb">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">Шарпи</data>
+    </node>
+    <node id="Ne52d107bd67fe9ac">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">доля вязка составлять В</data>
+    </node>
+    <node id="N771af0dfdc2b08c3">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">вид излом образец Шарпи</data>
+    </node>
+    <node id="N4a46921a968bd9b2">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура испытания</data>
+    </node>
+    <node id="N118aa7ac1b733dc2">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">вид излома</data>
+    </node>
+    <node id="Ne5be77821d24349c">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">эффект Баушингер</data>
+    </node>
+    <node id="N91e1510fb9bb57ea">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">упрочнение</data>
+    </node>
+    <node id="N42824e6bc053014b">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">мартенситно-аустенитный</data>
+    </node>
+    <node id="Ncbc788797606698b">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">дислокация</data>
+    </node>
+    <node id="N057bc3d86b23d627">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">К60</data>
+    </node>
+    <node id="N1ec8ade5c6f4365f">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">нитрид</data>
+    </node>
+    <node id="Nb7780f7808839f7f">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">свободная энергия</data>
+    </node>
+    <node id="N8ff31d7782416a14">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">горячий прокатка</data>
+    </node>
+    <node id="Ne8de3130ea374d55">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">термическая обработка</data>
+    </node>
+    <node id="Ne0705a0c44fca47e">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">дисперсионное твердение</data>
+    </node>
+    <node id="N707a70e92fd0e816">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">NbC</data>
+    </node>
+    <node id="N6e3a950989059e4f">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">структурообразование</data>
+    </node>
+    <node id="N23bbdcf00ad4868f">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">твердорастворный эффект</data>
+    </node>
+    <node id="N069566c62875939a">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">Niobium</data>
+    </node>
+    <node id="N9408d74427374d3d">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">Nb-Ti</data>
+    </node>
+    <node id="N3e1892a56e2073cd">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">Microalloying</data>
+    </node>
+    <node id="Ne53a6e6161110a8d">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">Grain size reduction</data>
+    </node>
+    <node id="N12ebbd9157e799e8">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">Strength</data>
+    </node>
+    <node id="N595e1cdf4a45a8ab">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">Weldability</data>
+    </node>
+    <node id="N1f6dcb2ca9738eed">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">задержка рекристаллизации</data>
+    </node>
+    <node id="N8bce5a4d68acaa4f">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">низкотемпературная вязкость</data>
+    </node>
+    <node id="N3ecb2b966f0c7761">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">термомеханическая прокатка</data>
+    </node>
+    <node id="Nf5dac760bee69a3f">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">ниобийсодержащая сталь X80</data>
+    </node>
+    <node id="Nf01e165613ba65d9">
+      <data key="d0">МИКРОСТРУКТУРА</data>
+      <data key="d1">дисперсный частица</data>
+    </node>
+    <node id="N049f2a34fac3a3de">
+      <data key="d0">ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС</data>
+      <data key="d1">нормализация</data>
+    </node>
+    <node id="N090f2ea742827b2d">
+      <data key="d0">ПАРАМЕТР</data>
+      <data key="d1">температура нормализация</data>
+    </node>
+    <node id="Nb738cd24b4eb6c39">
+      <data key="d0">СОЕДИНЕНИЕ</data>
+      <data key="d1">нитрид алюминия</data>
+    </node>
+    <node id="N085407962d1dc321">
+      <data key="d0">МАТЕРИАЛ</data>
+      <data key="d1">горячекатаная сталь</data>
+    </node>
+    <node id="N7a6b74e18f2baf61">
+      <data key="d0">СВОЙСТВО</data>
+      <data key="d1">Механические_свойства</data>
+    </node>
+    <node id="N1af04628805b465e">
+      <data key="d0">ИЗДЕЛИЕ</data>
+      <data key="d1">трубный сталь</data>
+    </node>
+    <edge source="N7796185fb3f9043a" target="N2860b27638698959" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N7796185fb3f9043a" target="N4b6c91344b544655" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N7796185fb3f9043a" target="N4b16f1a2e6e14965" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N7796185fb3f9043a" target="N81649e3d988e7e82" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N7796185fb3f9043a" target="N731f9056046ad520" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N7796185fb3f9043a" target="Nc5bf8d7421388a34" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="Ncb0798bbd8149ead" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="N2d45f6293ca45e7d" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="N2100c6994cf3b12e" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="N167a7695dd7a7ad0" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nec1f9fddfc510f91" target="Nd1f7a0080c07b97e" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4b6c91344b544655" target="Nd496d2e9ea89100b" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4b16f1a2e6e14965" target="N6740ed138d88ff0a" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8631ff59f1c981f1" target="N9b5b42d8bcdb486e" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8631ff59f1c981f1" target="Na8a839d01e6d22cb" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N8631ff59f1c981f1" target="N4691c26f9bea8076" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N9b5b42d8bcdb486e" target="N3c83e6a9b984f90c" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd1f7a0080c07b97e" target="Nd69991237cdf13a6" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N62733e8a7d1b5abf" target="Na94ab0fb79cd8a04" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N62733e8a7d1b5abf" target="N6acf8c850aae02fd" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N62733e8a7d1b5abf" target="N6e3a950989059e4f" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="Nd69991237cdf13a6" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="N46a90e18f6f43fb9" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="N6a73651f6d123521" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="N6a73651f6d123521" id="1">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="N4691c26f9bea8076" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="N8ef5ae19a4a13d2d" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="N7fd57944551a76fa" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N2c435bcd61ca82c8" target="N1105da045cb0e1dd" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N9dcec96774b2bf3e" target="N6740ed138d88ff0a" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N9dcec96774b2bf3e" target="Nfbcd820796e659eb" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N88bec102cfadfef1" target="Nd306750c26638cc5" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N88bec102cfadfef1" target="Ndf64a6499ddf45cd" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N88bec102cfadfef1" target="N5f9a4e6b8056c035" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N88bec102cfadfef1" target="Nb1109034f8759789" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N88bec102cfadfef1" target="N9b87a891f20a65d5" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N78fafe13b0a470fd" target="N88bec102cfadfef1" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N78fafe13b0a470fd" target="Nd496d2e9ea89100b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N78fafe13b0a470fd" target="N0c6d9b605e968501" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N78fafe13b0a470fd" target="N9b87a891f20a65d5" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N130fa4a40ae13206" target="Na3278ede3011662f" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd98888b2f9916657" target="N7fd57944551a76fa" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="Nd98888b2f9916657" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="N1105da045cb0e1dd" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="N1105da045cb0e1dd" id="1">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="N1105da045cb0e1dd" id="2">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="Nb1796097328b64cb" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="N9f5b6190137c6713" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="N35d1cff5afc4485b" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="N0b252a12cf9fb9e5" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4ebcfedb33b1bf41" target="Ne030a9a356762ee5" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0c6d9b605e968501" target="N0d3cc44c82f9d858" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0c6d9b605e968501" target="N84a27b8c6d472581" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N0c6d9b605e968501" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0c6d9b605e968501" target="N1af04628805b465e" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0d3cc44c82f9d858" target="Ne6f7c63551c94061" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Nf0af988c17c09405" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N4317762b6028316e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N6740ed138d88ff0a" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N6e611784012cc17c" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N6e611784012cc17c" id="1">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N4904ef7ece6432bc" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N8ef5ae19a4a13d2d" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Na2e20d13fef42324" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N1105da045cb0e1dd" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N1105da045cb0e1dd" id="1">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Nc76e7080d8ce265b" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N8c78216b25017efa" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N35d1cff5afc4485b" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N016cb5eaedda7255" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N7eacc345e1ffb9bf" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Ncb0798bbd8149ead" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Nbf2bb2fc681fa263" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N81d6768e46d9e813" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Nfbcd820796e659eb" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N60e016d196acae2e" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N9dcec96774b2bf3e" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N70332535ad09151c" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N6541ed07d8df2855" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N4b6c91344b544655" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N771af0dfdc2b08c3" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N2392fa6a6fd8006b" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N1d197390f39674fe" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N911d30c96088eb09" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N057bc3d86b23d627" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="N88bec102cfadfef1" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6a73651f6d123521" target="Nd3ef6865f764de7a" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc76e7080d8ce265b" target="N68da72d26c5a7062" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc76e7080d8ce265b" target="Neef6bc15ff5d036c" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc76e7080d8ce265b" target="N05308375fc33474d" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N3b8b1dd2a7a39c5f" target="Nd432c56f3ead05d1" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4691c26f9bea8076" target="N29f99070e86bd2b8" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d41ffba091453af" target="N6a73651f6d123521" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d41ffba091453af" target="Nd1f7a0080c07b97e" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4d41ffba091453af" target="Nd1f7a0080c07b97e" id="1">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d41ffba091453af" target="Na2e20d13fef42324" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d41ffba091453af" target="N2b44dc210d05e615" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d41ffba091453af" target="Nd6937c23c8d27999" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d41ffba091453af" target="Na80a9107fb7d7ac6" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="N0020d3e3f8c78a9c" id="0">
+      <data key="d2">УСКОРЯЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="N2b44dc210d05e615" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="N1ac69bdfca5cfd49" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="Nf7ab45625502fa1f" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="Nd952393f1b8c6a1a" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="Ndf64a6499ddf45cd" id="0">
+      <data key="d2">УСКОРЯЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="N5f9a4e6b8056c035" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4e23527a6c2a2165" target="Nb1109034f8759789" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N5db044e41ff58ac3" target="N707f565fb8f9f677" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N5db044e41ff58ac3" target="Nfc0225a51d49d250" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4904ef7ece6432bc" target="Nc70762be5a9be379" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N4d3f1e4776f02023" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N9dcec96774b2bf3e" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N2392fa6a6fd8006b" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N2392fa6a6fd8006b" id="1">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="Nde34cf8328b8d883" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N6740ed138d88ff0a" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N60e016d196acae2e" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N6541ed07d8df2855" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8ef5ae19a4a13d2d" target="N911d30c96088eb09" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N408d8ffb7bd41346" target="N167a7695dd7a7ad0" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N408d8ffb7bd41346" target="Nc2960ed3a3461787" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N167a7695dd7a7ad0" target="Ncb0798bbd8149ead" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N167a7695dd7a7ad0" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N7eacc345e1ffb9bf" target="N0b252a12cf9fb9e5" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6e611784012cc17c" target="N4d3f1e4776f02023" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6e611784012cc17c" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4317762b6028316e" target="N6740ed138d88ff0a" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N6740ed138d88ff0a" target="Nae05faf6acd9a038" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2b44dc210d05e615" target="N6555776b981e48fa" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N6aafb441fe4353f3" target="N4691c26f9bea8076" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6aafb441fe4353f3" target="N2b44dc210d05e615" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6aafb441fe4353f3" target="N88bec102cfadfef1" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6aafb441fe4353f3" target="N93d5f896481c659f" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N661ef12cbf8d7ac4" target="N1105da045cb0e1dd" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N661ef12cbf8d7ac4" target="N35a513da69c88412" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd45fe940fe243f31" target="Nffb4b4f81be61469" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd45fe940fe243f31" target="Ncb0798bbd8149ead" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N279a8575c2640e00" target="N4691c26f9bea8076" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N279a8575c2640e00" target="Nd45fe940fe243f31" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N5ca0876614aaae9b" target="N3c4f712b020f466c" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N5ca0876614aaae9b" target="Ne2292d6a3f1f8435" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N5ca0876614aaae9b" target="Ncb050c9a79cae346" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N474c2de369f6eb75" target="N6740ed138d88ff0a" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Naad1bb38d25547cd" target="N62baa9eb60231bb9" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Naad1bb38d25547cd" target="N8d5305478ae6e564" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nae05faf6acd9a038" target="Nd68f7ea844019560" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N9bbb823dc06de822" target="N91bffa34027b2aac" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N91bffa34027b2aac" target="N4691c26f9bea8076" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N91bffa34027b2aac" target="Nd3ef6865f764de7a" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N91bffa34027b2aac" target="Na6637b493ed7ed56" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N29f99070e86bd2b8" target="N3afb0cb0e62b1cf7" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd3ef6865f764de7a" target="N4691c26f9bea8076" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4300dd4212dc0d11" target="Nd3ef6865f764de7a" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N5a284afe98b4bde7" target="N4b16f1a2e6e14965" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nccb5c2198e07f98b" target="Ncaa337138b4bd5eb" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nccb5c2198e07f98b" target="Nd3ef6865f764de7a" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0c64cfdc5636b465" target="N9dcec96774b2bf3e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2e4af603a349d1ba" target="N4b16f1a2e6e14965" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N87d0135923a1a22c" target="N0c64cfdc5636b465" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N3c5f66c1ceb077f4" target="N97bd43d93bcc2ea4" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nbdf2aa909e4f85e9" target="N86a14a4edf2ebcc9" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N9000d8cd754bcca2" target="Nd601f0174de53798" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="Nec1f9fddfc510f91" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="N9dcec96774b2bf3e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="Nb6813dab33789b80" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="N1898f4c2e2d0547b" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="Ne98c2312ca995d27" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="N86e47e2ac57eeaa3" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="N8d66751bb9fb264f" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="N167a7695dd7a7ad0" id="0">
+      <data key="d2">УСКОРЯЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="Nca81fb82507f6016" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc2960ed3a3461787" target="N5a79a1da14367eaa" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nfdd5274c791a1924" target="Nf6dd733f8f0ac7f4" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nfdd5274c791a1924" target="N0c64cfdc5636b465" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nfdd5274c791a1924" target="N274ddf14dcadd26e" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6606efd0d98d9f70" target="Nfdd5274c791a1924" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4fdde3af85ca6481" target="N11002853c8763b47" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N67b2adf7f60751b9" target="N11002853c8763b47" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N56fcc24a6a0935cd" target="Nbbfa1a01632821b9" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N1fda77eeec808bfb" target="N9f3f093fe9113f1b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nad51497991e584de" target="Naf7e6acdc5bdcee3" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N335b187f1219d7d2" target="Naf7e6acdc5bdcee3" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N3f392c0e65d80429" target="N357d12133d478ab6" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na514c8731da7f946" target="N4c6c09649ccf61fb" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N731f9056046ad520" target="N67f6d7bb6ddfe8da" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc5bf8d7421388a34" target="Nbc700fdc1112dec7" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc5bf8d7421388a34" target="N266e8e7e82b57cbb" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc5bf8d7421388a34" target="N827b8caac6a90502" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc5bf8d7421388a34" target="N187669190dc8a21b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N827b8caac6a90502" target="Nb53797f4d05b50d3" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N827b8caac6a90502" target="N0fab9fce7b3b38cc" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N35a513da69c88412" target="N830a1e202cbb9bcb" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N35a513da69c88412" target="N1105da045cb0e1dd" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N480e14be722ff8fb" target="N2f587a6c063dff47" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N2f587a6c063dff47" target="Nb53797f4d05b50d3" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc8cd23bcbfcb2b15" target="N893ebfeee2361d37" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc8cd23bcbfcb2b15" target="N6b52083476177370" id="0">
+      <data key="d2">УСКОРЯЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N389b464666d0917b" target="N1266779230329775" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd8654f7b26f11c83" target="N274ddf14dcadd26e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N274ddf14dcadd26e" target="N224781c30372a1bb" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="N886d0f8524fa57b6" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="Nae4d126a2af69007" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="N6a73651f6d123521" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="N83b23d0f9406d4e5" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="Nc76e7080d8ce265b" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="Ne73c58d83f00d397" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="Ne73c58d83f00d397" id="1">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="Nd496d2e9ea89100b" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="Nd496d2e9ea89100b" id="1">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="N1105da045cb0e1dd" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="N1105da045cb0e1dd" id="1">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N60e016d196acae2e" target="N4317762b6028316e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N65d285efb23346a7" target="N8db3ae8a1334cefb" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N65d285efb23346a7" target="N6acf8c850aae02fd" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N65d285efb23346a7" target="N9d3509a11fbe2735" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N1cb71756cc991336" target="N8db3ae8a1334cefb" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N1cb71756cc991336" target="N65b804c0a64043da" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N1cb71756cc991336" target="N6acf8c850aae02fd" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0fc26d5c2b5a5894" target="N8db3ae8a1334cefb" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N0fc26d5c2b5a5894" target="N8db3ae8a1334cefb" id="1">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N0fc26d5c2b5a5894" target="N9d3509a11fbe2735" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N0fc26d5c2b5a5894" target="Nf01e165613ba65d9" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N603e1a84e5903775" target="N408d8ffb7bd41346" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N8807582ef82917bb" target="N049f2a34fac3a3de" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N749496fe0bb6a690" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N749496fe0bb6a690" target="N01040bc2efef6ebc" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N749496fe0bb6a690" target="N445bfd6af6a9b9ce" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N749496fe0bb6a690" target="N167a7695dd7a7ad0" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N749496fe0bb6a690" target="Ne030a9a356762ee5" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb26feefd1de03933" target="N5a79a1da14367eaa" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nb26feefd1de03933" target="Nd306750c26638cc5" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nb26feefd1de03933" target="N0df29b072e34e103" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb26feefd1de03933" target="Naf38faf4df13a8c9" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb26feefd1de03933" target="N090f2ea742827b2d" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N098660002759b88b" target="Nd6937c23c8d27999" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N098660002759b88b" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N098660002759b88b" target="N6a73651f6d123521" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N098660002759b88b" target="N83cba7a43040d077" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N098660002759b88b" target="Na80a9107fb7d7ac6" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N098660002759b88b" target="N83192f39ee99a700" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd306750c26638cc5" target="Na016c755fdc3570f" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd306750c26638cc5" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N827aa29bcd819cbf" target="Nc57d2b61cf8ef612" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N61a988349d679042" target="Nc57d2b61cf8ef612" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N3c83e6a9b984f90c" target="N4b3a064d4160d850" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nea522ab00a2756fe" target="N2128a90b42bef993" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nea522ab00a2756fe" target="Ne8990b213519fe31" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nea522ab00a2756fe" target="N87d0135923a1a22c" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N37374cb8f316c7a7" target="Nca81fb82507f6016" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Naf38faf4df13a8c9" target="N70332535ad09151c" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nfb087f2ccc74bdde" target="Nec1f9fddfc510f91" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4cdc10c55b11a5b9" target="N2b44dc210d05e615" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="Nb9c08e76df736ce9" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="N3baea12691cc9b17" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="N7fd57944551a76fa" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="Nb337896fccd85a03" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="N50a484189abc5237" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="N4af41dd00e277b1a" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd952393f1b8c6a1a" target="N4b6c91344b544655" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ncec38823af812cde" target="Nb9c08e76df736ce9" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N2281cfafdc3c8993" target="N4dfe3bbfc4fca8a0" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N86e47e2ac57eeaa3" target="Nf2f241f2ea4eb4e7" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Naea38cd53af72e2d" target="Na94ab0fb79cd8a04" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Na94ab0fb79cd8a04" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Na94ab0fb79cd8a04" target="Naea38cd53af72e2d" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N433ab1796be72e4b" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">УСКОРЯЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N433ab1796be72e4b" target="N76ed05cab0d92c44" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N08aad604e5fc404c" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nad9f08cd52d1a1a9" target="N081d66c7207ec088" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nad9f08cd52d1a1a9" target="N85b5b656e3e2d3ef" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N081d66c7207ec088" target="Nad9f08cd52d1a1a9" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N081d66c7207ec088" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N759f7b3b735b30cc" target="N1c77111a2fc39025" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N759f7b3b735b30cc" target="N6555776b981e48fa" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ndf64a6499ddf45cd" target="N014f8fb825d07180" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ndf64a6499ddf45cd" target="N4e23527a6c2a2165" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ndf64a6499ddf45cd" target="N6a73651f6d123521" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ndf64a6499ddf45cd" target="N4881f910a0e0ed8c" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N5a79a1da14367eaa" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N6140d1f911b81844" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="Nae4de44be17eaa5b" id="1">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N274ddf14dcadd26e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N274ddf14dcadd26e" id="1">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N3ce8b1c7655d3b60" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N7f82fcb2ffccedba" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N4317762b6028316e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N2100c6994cf3b12e" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N167a7695dd7a7ad0" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N2a6caef0e6cb6e4e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Na75c5f3d8496e847" target="N2a6caef0e6cb6e4e" id="1">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N111c6c247dbcee4d" target="N6e611784012cc17c" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N85b5b656e3e2d3ef" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N85b5b656e3e2d3ef" target="N3fc05ef5ffbb69ab" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nae4de44be17eaa5b" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nae4de44be17eaa5b" target="N167a7695dd7a7ad0" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nae4de44be17eaa5b" target="N167a7695dd7a7ad0" id="1">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nae4de44be17eaa5b" target="Ne73c58d83f00d397" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N8d66751bb9fb264f" target="Nd9651d9beb6c88f4" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N6140d1f911b81844" target="N29f99070e86bd2b8" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N7b7acbce8afb6c06" target="N4b3a064d4160d850" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N7b7acbce8afb6c06" target="Ne030a9a356762ee5" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N3a48b806d852eef9" target="N70a7fdb8c4fe6b96" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N3a48b806d852eef9" target="N7360f4ea928ba89c" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N3a48b806d852eef9" target="Ndf64a6499ddf45cd" id="0">
+      <data key="d2">УСКОРЯЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N3a48b806d852eef9" target="N189a86669de1c75a" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Na208a8598901e55b" target="N4691c26f9bea8076" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="Ne030a9a356762ee5" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N4b16f1a2e6e14965" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N4b16f1a2e6e14965" id="1">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N15e475d3f6297db4" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="Ne98c2312ca995d27" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N63128b4c2fc1fc38" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="Ndfd10e3261be5f41" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N71824dc85714193b" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N274ddf14dcadd26e" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N37374cb8f316c7a7" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N7fd57944551a76fa" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N8298de15a39498c0" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N167a7695dd7a7ad0" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N91e1510fb9bb57ea" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="N50a484189abc5237" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="Nd3ef6865f764de7a" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne73c58d83f00d397" target="Ncb0798bbd8149ead" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N80d306a1b1a87e48" target="N169da9335728cfeb" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4968f8b6895cf638" target="N4691c26f9bea8076" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4968f8b6895cf638" target="N016cb5eaedda7255" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4968f8b6895cf638" target="N412acff9b58d70bc" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4968f8b6895cf638" target="Ne73c58d83f00d397" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4968f8b6895cf638" target="Nd496d2e9ea89100b" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4968f8b6895cf638" target="Ncb0798bbd8149ead" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd8c45e3a2238a03a" target="Nec1f9fddfc510f91" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nb42fda197e019a35" target="N9d3509a11fbe2735" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N9d3509a11fbe2735" target="N12ebbd9157e799e8" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N9d3509a11fbe2735" target="N595e1cdf4a45a8ab" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N3fc2c5299c373b44" target="N9d3509a11fbe2735" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N471e43b567da6a58" target="N65b804c0a64043da" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N25f6ea0cfc6dfd5c" target="N65b804c0a64043da" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N87752dda655f8f19" target="Ncaa337138b4bd5eb" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nf9fb5c273744c443" target="Ne030a9a356762ee5" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N3a1f8b4beaa90f30" target="Nf9fb5c273744c443" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N759cddd79a244d30" target="Ne030a9a356762ee5" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N759cddd79a244d30" target="N35a513da69c88412" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N759cddd79a244d30" target="N0eadd5f65d37daf4" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N759cddd79a244d30" target="Na524e5014342d360" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N759cddd79a244d30" target="Nf5ef88e796441d6e" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nf5ef88e796441d6e" target="N6bcdcc6fa51e23df" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N16a3b21b1a1a48db" target="N6bcdcc6fa51e23df" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N2b6eebc306520dc9" target="N16a3b21b1a1a48db" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2b6eebc306520dc9" target="Nd94f7abf04a9a6c4" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N2b6eebc306520dc9" target="N6ae92d4c38bb3caa" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N2f4e8f40d960e0c2" target="N656a459aea6401f0" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Na26768588d0d40e4" target="N656a459aea6401f0" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0e6a6ff30795cbe7" target="N11188ef75be45f49" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N56d3156c3b3b3e76" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N1d60576c848b049e" target="N4b16f1a2e6e14965" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nf5d525e88ce8422a" target="N1d60576c848b049e" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nf5d525e88ce8422a" target="N1931d11c1d2d5c27" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nf5d525e88ce8422a" target="N7b1b6246a28b6c3a" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N1931d11c1d2d5c27" target="N5a79a1da14367eaa" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N1958f76e1ab8388a" target="Nbd1f52627173469c" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nae8918b62b2903cc" target="N3c83e6a9b984f90c" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0704ae246acee2d2" target="Nae8918b62b2903cc" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0704ae246acee2d2" target="N25ab7a4dc319b10f" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0704ae246acee2d2" target="N3c83e6a9b984f90c" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0704ae246acee2d2" target="N3c83e6a9b984f90c" id="1">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N0704ae246acee2d2" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N31ed0cee38196762" target="Nd6937c23c8d27999" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N31ed0cee38196762" target="N3fabab3190946e2d" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N31ed0cee38196762" target="N8d032b6730db75aa" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N31ed0cee38196762" target="Nd952393f1b8c6a1a" id="0">
+      <data key="d2">ТРЕБУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nf5c5490323d68155" target="Nd6937c23c8d27999" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nf5c5490323d68155" target="N29f99070e86bd2b8" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nf5c5490323d68155" target="N3afb0cb0e62b1cf7" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N910720a60d9fcfa0" target="Nd6937c23c8d27999" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nd0de921c1906fd75" target="N82bdc7a98df2bf78" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nfd9d4c4a6e134505" target="Nd6937c23c8d27999" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N75836c1059293f5c" target="Nc70762be5a9be379" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N888bd4f9b349d998" target="Nc339da23fbebbb2d" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc687b3e172148b16" target="N665134d3fa7d0562" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc687b3e172148b16" target="Nff4f46c96fd1b694" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nff4f46c96fd1b694" target="N8d032b6730db75aa" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nc7c6588c1bc2e4bd" target="Nc2960ed3a3461787" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4a336ebec4039cb2" target="N388ae03ed0dc4ab6" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4a336ebec4039cb2" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="N15e475d3f6297db4" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="Ne98c2312ca995d27" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="N63128b4c2fc1fc38" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="Ndfd10e3261be5f41" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="N749496fe0bb6a690" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="N2737a41089ecd0e2" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="Nfc141044bda55ad1" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="Na75c5f3d8496e847" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="N91e1510fb9bb57ea" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nd496d2e9ea89100b" target="Nd3ef6865f764de7a" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nfa890da4819af161" target="Nce46b047692f21a3" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N870aaf0a119b1313" target="N9b87a891f20a65d5" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne5c14975c4866140" target="N9b87a891f20a65d5" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d1e463ba3397b2f" target="Nd306750c26638cc5" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N4d1e463ba3397b2f" target="N749496fe0bb6a690" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4d1e463ba3397b2f" target="N014f8fb825d07180" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N70b814911cea41b4" target="N1105da045cb0e1dd" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6541ed07d8df2855" target="N60e016d196acae2e" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N66bb914d17cec220" target="N6a73651f6d123521" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb337896fccd85a03" target="Ne73c58d83f00d397" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N101365fc7fb6cf44" target="Ne73c58d83f00d397" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N101365fc7fb6cf44" target="N5c645e0cf5618aae" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N28c0ce802c1068f5" target="Ne73c58d83f00d397" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N28c0ce802c1068f5" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N28c0ce802c1068f5" target="Nb337896fccd85a03" id="0">
+      <data key="d2">ПРЕВРАЩАЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N6ce62045f3b4db06" target="Ncaa337138b4bd5eb" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N6ce62045f3b4db06" target="Ne030a9a356762ee5" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N2737a41089ecd0e2" target="Na75c5f3d8496e847" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nc13615b11800348e" target="Nd496d2e9ea89100b" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb8b4d67659446f8a" target="N9dcec96774b2bf3e" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb8b4d67659446f8a" target="Nba343b890b9825d5" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb8b4d67659446f8a" target="Ne52d107bd67fe9ac" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N418c740702b19a88" target="N9dcec96774b2bf3e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N50c885239f501cdc" target="N6be413dc49b0b122" id="0">
+      <data key="d2">ИЗМЕРЯЕТСЯ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N4a46921a968bd9b2" target="N118aa7ac1b733dc2" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ne5be77821d24349c" target="Ncb0798bbd8149ead" id="0">
+      <data key="d2">УХУДШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ne5be77821d24349c" target="Ncb0798bbd8149ead" id="1">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N42824e6bc053014b" target="N2392fa6a6fd8006b" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Ncbc788797606698b" target="N7eacc345e1ffb9bf" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nb7780f7808839f7f" target="N1ec8ade5c6f4365f" id="0">
+      <data key="d2">ВЛИЯЕТ_НА</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ne8de3130ea374d55" target="Ne0705a0c44fca47e" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Ne0705a0c44fca47e" target="N6e3a950989059e4f" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N707a70e92fd0e816" target="Nae4de44be17eaa5b" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N23bbdcf00ad4868f" target="N749496fe0bb6a690" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N069566c62875939a" target="N3e1892a56e2073cd" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N069566c62875939a" target="N0c6d9b605e968501" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N069566c62875939a" target="N3afb0cb0e62b1cf7" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N069566c62875939a" target="Nec1f9fddfc510f91" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N069566c62875939a" target="N7a6b74e18f2baf61" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N9408d74427374d3d" target="N069566c62875939a" id="0">
+      <data key="d2">СОДЕРЖИТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N3e1892a56e2073cd" target="Ne53a6e6161110a8d" id="0">
+      <data key="d2">ФОРМИРУЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N1f6dcb2ca9738eed" target="N8ff31d7782416a14" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N1f6dcb2ca9738eed" target="N8bce5a4d68acaa4f" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N3ecb2b966f0c7761" target="N1f6dcb2ca9738eed" id="0">
+      <data key="d2">УСКОРЯЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nf5dac760bee69a3f" target="N3ecb2b966f0c7761" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N049f2a34fac3a3de" target="Nec1f9fddfc510f91" id="0">
+      <data key="d2">ПРИМЕНЯЕТСЯ_В</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N049f2a34fac3a3de" target="N29f99070e86bd2b8" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N049f2a34fac3a3de" target="N3afb0cb0e62b1cf7" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Nb738cd24b4eb6c39" target="N049f2a34fac3a3de" id="0">
+      <data key="d2">ТОРМОЗИТ</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="N085407962d1dc321" target="Nffb4b4f81be61469" id="0">
+      <data key="d2">УЛУЧШАЕТ</data>
+      <data key="d3">3</data>
+    </edge>
+  </graph>
+</graphml>

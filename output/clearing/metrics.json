@@ -1,0 +1,110 @@
+{
+  "stage": "clearing",
+  "generated_at": "2026-10-05T20:20:54.824927+00:00",
+  "meta": {
+    "quality_note": "Качественные метрики пока заглушки. Их можно реализовать через BaseQualityMetric.",
+    "expected_quality_metrics": [
+      "cer",
+      "wer",
+      "precision",
+      "recall",
+      "f1",
+      "bert_score",
+      "llm_as_judge",
+      "numbers_saved",
+      "formulas_saved",
+      "tables_saved"
+    ],
+    "libraries": [
+      "re",
+      "unicodedata",
+      "BeautifulSoup",
+      "nltk"
+    ],
+    "note": "tabula-py и camelot не используются для .md, так как они предназначены для извлечения таблиц из PDF."
+  },
+  "counters": {
+    "chars_before": 24127538,
+    "display_math_protected": 9,
+    "inline_math_protected": 213,
+    "images_removed": 93,
+    "markdown_images_removed": 93,
+    "html_tables_protected": 11,
+    "html_tables_converted_to_markdown": 11,
+    "markdown_tables_protected": 2,
+    "page_numbers_removed": 9,
+    "markdown_headings_removed": 44,
+    "markdown_list_markers_removed": 53,
+    "markdown_escapes_removed": 41,
+    "chars_after": 239725,
+    "files_processed": 2
+  },
+  "gauges": {
+    "config": {
+      "encoding": "utf-8",
+      "normalize_form": "NFC",
+      "remove_control_chars": true,
+      "remove_format_chars": true,
+      "normalize_whitespace": true,
+      "collapse_blank_lines": true,
+      "remove_html_comments": true,
+      "remove_html_tags": true,
+      "lowercase": false,
+      "protect_abbreviations": true,
+      "remove_stopwords": false,
+      "numeric_cleanup": false,
+      "protect_math": true,
+      "remove_images": true,
+      "remove_markdown_links": true,
+      "remove_markdown_markup": true,
+      "remove_page_numbers": true,
+      "remove_headers_footers": true,
+      "header_min_repeats": 6,
+      "header_max_chars": 80,
+      "convert_html_tables_to_markdown": true,
+      "protect_markdown_tables": true,
+      "html_parser": "html.parser",
+      "output_suffix": ""
+    },
+    "input_files": 2
+  },
+  "quality": {
+    "cer": null,
+    "wer": null,
+    "precision": null,
+    "recall": null,
+    "f1": null,
+    "bert_score": null,
+    "llm_as_judge": null,
+    "numbers_saved": null,
+    "formulas_saved": null,
+    "tables_saved": null
+  },
+  "per_file": [
+    {
+      "file": "ganoshenko.md",
+      "chars_before": 24100881,
+      "display_math_protected": 9,
+      "inline_math_protected": 195,
+      "images_removed": 93,
+      "markdown_images_removed": 93,
+      "html_tables_protected": 11,
+      "html_tables_converted_to_markdown": 11,
+      "markdown_tables_protected": 1,
+      "page_numbers_removed": 9,
+      "markdown_headings_removed": 42,
+      "markdown_list_markers_removed": 53,
+      "markdown_escapes_removed": 27,
+      "chars_after": 213085
+    },
+    {
+      "file": "vanadiy.md",
+      "chars_before": 26657,
+      "inline_math_protected": 18,
+      "markdown_tables_protected": 1,
+      "markdown_headings_removed": 2,
+      "markdown_escapes_removed": 14,
+      "chars_after": 26640
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "stage": "chunking",
+  "generated_at": "2026-10-05T20:21:01.831120+00:00",
+  "meta": {
+    "expected_quality_metrics": [
+      "avg_chunk_tokens",
+      "std_chunk_tokens",
+      "broken_sentences_ratio",
+      "broken_paragraphs_ratio",
+      "broken_formulas_ratio",
+      "overlap_ratio",
+      "hit_rate"
+    ],
+    "thresholds": {
+      "chunk_size_tokens": "512-1024",
+      "std_chunk_tokens": "<=200",
+      "broken_sentences_ratio": "<=0.05",
+      "broken_paragraphs_ratio": "<=0.02",
+      "broken_formulas_ratio": "0",
+      "overlap_ratio": "0.10-0.20",
+      "hit_rate": ">0.90"
+    },
+    "libraries": [
+      "langchain-text-splitters",
+      "tiktoken",
+      "sentence-transformers",
+      "spaCy",
+      "latex2text"
+    ]
+  },
+  "counters": {
+    "chars_before": 234778,
+    "display_math_protected": 9,
+    "inline_math_protected": 213,
+    "markdown_tables_protected": 12,
+    "numunit_protected": 386,
+    "chunks_created": 169,
+    "tokens_total": 127249,
+    "tokens_sum_squares": 101480057,
+    "sentences_total": 1212,
+    "split_sentences": 10,
+    "paragraphs_total": 673,
+    "split_paragraphs": 2,
+    "formulas_total": 222,
+    "split_formulas": 0,
+    "oversized_chunks": 5,
+    "undersized_chunks": 11,
+    "overlap_tokens_total": 15581,
+    "chunks_with_overlap": 117,
+    "files_processed": 2
+  },
+  "gauges": {
+    "config": {
+      "encoding": "utf-8",
+      "token_encoding": "cl100k_base",
+      "chunk_size_tokens": 800,
+      "chunk_overlap_percent": 0.15,
+      "min_chunk_tokens": 512,
+      "max_chunk_tokens": 1024,
+      "protect_math": true,
+      "protect_tables": true,
+      "protect_numunit": true,
+      "separators": [
+        "\n\n",
+        "\n",
+        ". ",
+        "! ",
+        "? ",
+        "; ",
+        ", ",
+        " "
+      ],
+      "output_suffix": ".chunks"
+    },
+    "input_files": 2
+  },
+  "quality": {
+    "avg_overlap_tokens": 92.2,
+    "overlap_ratio": 0.1224,
+    "avg_chunk_tokens": 752.95,
+    "std_chunk_tokens": 183.13,
+    "broken_sentences_ratio": 0.0083,
+    "broken_paragraphs_ratio": 0.003,
+    "broken_formulas_ratio": 0.0,
+    "hit_rate": null
+  },
+  "per_file": [
+    {
+      "file": "ganoshenko.md",
+      "chars_before": 208649,
+      "display_math_protected": 9,
+      "inline_math_protected": 195,
+      "markdown_tables_protected": 11,
+      "numunit_protected": 370,
+      "chunks_created": 152,
+      "tokens_total": 113217,
+      "tokens_sum_squares": 89492595,
+      "sentences_total": 1079,
+      "split_sentences": 10,
+      "paragraphs_total": 597,
+      "split_paragraphs": 2,
+      "formulas_total": 204,
+      "split_formulas": 0,
+      "oversized_chunks": 5,
+      "undersized_chunks": 10,
+      "overlap_tokens_total": 13428,
+      "chunks_with_overlap": 105
+    },
+    {
+      "file": "vanadiy.md",
+      "chars_before": 26129,
+      "inline_math_protected": 18,
+      "markdown_tables_protected": 1,
+      "numunit_protected": 16,
+      "chunks_created": 17,
+      "tokens_total": 14032,
+      "tokens_sum_squares": 11987462,
+      "sentences_total": 133,
+      "split_sentences": 0,
+      "paragraphs_total": 76,
+      "split_paragraphs": 0,
+      "formulas_total": 18,
+      "split_formulas": 0,
+      "oversized_chunks": 0,
+      "undersized_chunks": 1,
+      "overlap_tokens_total": 2153,
+      "chunks_with_overlap": 12
+    }
+  ]
+}
