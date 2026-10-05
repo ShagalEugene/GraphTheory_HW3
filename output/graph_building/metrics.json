@@ -1,0 +1,80 @@
+{
+  "stage": "graph_building",
+  "generated_at": "2026-10-05T17:24:20.125044+00:00",
+  "meta": {},
+  "counters": {
+    "files_processed": 4,
+    "llm_entities_returned": 0,
+    "llm_relations_returned": 0,
+    "chunks_processed": 169
+  },
+  "gauges": {
+    "config": {
+      "encoding": "utf-8",
+      "llm_model_repo": "Qwen/Qwen3.5-7B-Instruct",
+      "llm_model_path": "models/qwen3.5-7b-instruct",
+      "llm_auto_download": true,
+      "llm_device": "cpu",
+      "llm_max_new_tokens": 1024,
+      "llm_max_input_tokens": 2048,
+      "llm_max_context_chars": 2000,
+      "llm_temperature": 0.0,
+      "llm_top_p": 1.0,
+      "llm_repetition_penalty": 1.0,
+      "prompt_dir": "configs",
+      "extract_prompt_file": "extract.txt",
+      "prompt_file": "G:\\MISIS\\1\\GraphTheory\\HW3\\src\\configs\\extract.txt",
+      "output_filename": "knowledge_graph",
+      "output_suffix": ".graphml",
+      "entity_types": [
+        "МАТЕРИАЛ",
+        "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ",
+        "СОЕДИНЕНИЕ",
+        "МИКРОСТРУКТУРА",
+        "ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС",
+        "СВОЙСТВО",
+        "ПАРАМЕТР",
+        "ИЗДЕЛИЕ"
+      ],
+      "relation_types": [
+        "СОДЕРЖИТ",
+        "ФОРМИРУЕТ",
+        "ПРЕВРАЩАЕТСЯ_В",
+        "ТОРМОЗИТ",
+        "УСКОРЯЕТ",
+        "УЛУЧШАЕТ",
+        "УХУДШАЕТ",
+        "ВЛИЯЕТ_НА",
+        "ПРИМЕНЯЕТСЯ_В",
+        "ТРЕБУЕТ",
+        "ИЗМЕРЯЕТСЯ"
+      ],
+      "default_entity_type": "КОНЦЕПЦИЯ",
+      "default_relation_type": "ВЛИЯЕТ_НА",
+      "max_new_entities": 12,
+      "max_new_relations": 12,
+      "min_relation_weight": 2,
+      "max_quote_chars": 100,
+      "max_label_chars": 80,
+      "strict_types": true,
+      "require_quote": true,
+      "drop_unresolved_relations": true,
+      "deduplicate_relations": true,
+      "remove_isolates": true,
+      "store_edge_quote": false,
+      "filter_labels": true
+    },
+    "input_files": 4,
+    "total_nodes": 0,
+    "total_edges": 0,
+    "nodes_by_type": {},
+    "edges_by_type": {},
+    "dropped_total": 0
+  },
+  "quality": {
+    "relations_per_chunk": 0.0,
+    "entities_per_chunk": 0.0,
+    "relation_acceptance_rate": null
+  },
+  "per_file": []
+}

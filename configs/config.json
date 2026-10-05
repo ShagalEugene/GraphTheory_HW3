@@ -1,0 +1,24 @@
+{
+  "encoding": "utf-8",
+
+  "prompt_dir": "configs",
+  "extract_prompt_file": "extract.txt",
+
+  "output_filename": "knowledge_graph",
+  "output_suffix": ".graphml",
+
+  "max_new_entities": 12,
+  "max_new_relations": 12,
+  "min_relation_weight": 2,
+  "max_quote_chars": 100,
+  "max_label_chars": 80,
+
+  "strict_types": true,
+  "require_quote": true,
+  "drop_unresolved_relations": true,
+  "deduplicate_relations": true,
+  "remove_isolates": true,
+
+  "store_edge_quote": false,
+  "filter_labels": true
+}

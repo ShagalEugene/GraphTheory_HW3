@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steel-kg-pipeline"
+version = "0.1.0"
+description = "Text-to-knowledge-graph pipeline for Russian-language metallurgy documents (cleaning, normalization, chunking, tokenization, vectorization, LLM graph extraction)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # text processing
+    "beautifulsoup4>=4.12",
+    "nltk>=3.8",
+    "pymorphy3>=2.0",
+    "pymorphy3-dicts-ru>=2.4",
+    "snowballstemmer>=2.2",
+    "pint>=0.23",
+    "python-dateutil>=2.8",
+    "pandas>=2.0",
+    # formulas (sympy.parsing.latex requires the ANTLR runtime, version pinned by sympy)
+    "sympy>=1.12",
+    "antlr4-python3-runtime==4.11.*",
+    # chunking / tokenization
+    "tiktoken>=0.7",
+    "langchain-text-splitters>=0.2",
+    # embeddings and LLM
+    "torch>=2.2",
+    "sentence-transformers>=3.0",
+    "transformers>=5.2",  # Qwen3.5 support
+    "accelerate>=0.30",   # needed for low_cpu_mem_usage / device_map
+    "huggingface-hub>=0.23",
+    # graph + utils
+    "networkx>=3.0",
+    "tqdm>=4.66",
+]
+
+[tool.setuptools]
+# flat layout: top-level modules + the `pipeline` package.
+# configs/ and models/ are resolved relative to main.py, so run the project
+# from source (see README) instead of installing it into site-packages.
+py-modules = ["constants", "main"]
+packages = ["pipeline"]
+
+[tool.uv]
+package = false
