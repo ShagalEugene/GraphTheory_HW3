@@ -404,7 +404,6 @@ class GraphBuildingDefaultStage(BaseStage):
 
             metrics.inc("chunks_processed")
 
-        metrics.inc("files_processed")
         return input_path
 
     def finalize_metrics(self, metrics: MetricsCollector) -> None:

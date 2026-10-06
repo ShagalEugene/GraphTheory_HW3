@@ -2,14 +2,19 @@ import json
 import tempfile
 import threading
 import unittest
+import shutil
 from contextlib import contextmanager
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from unittest.mock import patch
 
 import networkx as nx
 
 from pipeline.base import StageContext
 from pipeline.graph_building import GraphBuildingConfig, GraphBuildingStage
+from pipeline.graph_building_default import GraphBuildingDefaultConfig, GraphBuildingDefaultStage
+import main as pipeline_main
+from pipeline.clearing import ClearingStage
 
 
 @contextmanager
@@ -42,6 +47,60 @@ def ollama_server(response, status=200):
 
 
 class GraphOllamaTests(unittest.TestCase):
+    def test_main_default_graph_reads_cleared_markdown_without_embedded_images(self):
+        quote = "ниобий тормозит рекристаллизацию"
+        answer = "\n".join(json.dumps(item, ensure_ascii=False) for item in [
+            ["E", "Nb", "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ"],
+            ["E", "рекристаллизация", "ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС"],
+            ["R", "Nb", "рекристаллизация", "ТОРМОЗИТ", quote, 3],
+        ])
+        project_root = Path(pipeline_main.__file__).resolve().parent
+        real_run_stage = pipeline_main.run_stage
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            shutil.copytree(project_root / "configs", root / "configs")
+            (root / "input").mkdir()
+            image_payload = "A" * 100_000
+            (root / "input" / "sample.md").write_text(
+                quote + "\n![image](data:image/png;base64," + image_payload + ")\n"
+                + '<img src="data:image/png;base64,' + image_payload + '">',
+                encoding="utf-8",
+            )
+            with ollama_server({"done": True, "message": {"content": answer}}) as (url, calls):
+                llm_path = root / "configs" / "llm.json"
+                llm = json.loads(llm_path.read_text(encoding="utf-8"))
+                llm["llm_ollama_url"] = url
+                llm_path.write_text(json.dumps(llm), encoding="utf-8")
+
+                def run_only_default(stage, input_dir, output_root):
+                    if isinstance(stage, ClearingStage):
+                        return real_run_stage(stage, input_dir, output_root)
+                    if isinstance(stage, GraphBuildingDefaultStage):
+                        self.assertIsInstance(stage.config, GraphBuildingDefaultConfig)
+                        self.assertEqual(input_dir, root / "output" / "clearing")
+                        cleaned = (input_dir / "sample.md").read_text(encoding="utf-8")
+                        self.assertIn(quote, cleaned)
+                        self.assertNotIn("data:image", cleaned)
+                        self.assertNotIn(image_payload, cleaned)
+                        self.assertEqual(stage.config.llm_ollama_model, llm["llm_ollama_model"])
+                        return real_run_stage(stage, input_dir, output_root)
+                    directory = output_root / stage.name
+                    directory.mkdir(parents=True, exist_ok=True)
+                    return directory
+
+                with patch.object(pipeline_main, "__file__", str(root / "main.py")), \
+                     patch.object(pipeline_main, "run_stage", side_effect=run_only_default):
+                    pipeline_main.main()
+            self.assertEqual(len(calls), 1)
+            self.assertNotIn("data:image", calls[0][1]["messages"][0]["content"])
+            output = root / "output" / "graph_building_default"
+            graph = nx.read_graphml(output / "knowledge_graph.graphml")
+            self.assertEqual(graph.number_of_nodes(), 2)
+            self.assertEqual(graph.number_of_edges(), 1)
+            metrics = json.loads((output / "metrics.json").read_text(encoding="utf-8"))
+            self.assertEqual(metrics["counters"]["files_processed"], 1)
+            self.assertEqual(metrics["counters"]["chunks_processed"], 1)
+
     def test_wrapped_and_incomplete_outer_arrays_preserve_complete_records(self):
         stage = GraphBuildingStage()
         entity = ["E", "Nb", "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ"]
@@ -114,7 +173,7 @@ class GraphOllamaTests(unittest.TestCase):
                 result = stage.run(StageContext(input_dir=source, output_dir=root / "output"))
             self.assertTrue(result.success, result.to_dict())
             self.assertEqual(len(calls), 1)
-            graph = nx.read_graphml(root / "output" / "knowledge_graph.graphml")
+            graph = nx.read_graphml(root / "output" / "graph_building" / "knowledge_graph.graphml")
             self.assertEqual(graph.number_of_nodes(), 2)
             self.assertEqual(graph.number_of_edges(), 1)
             self.assertEqual(next(iter(graph.edges(data=True)))[2]["relation"], "ТОРМОЗИТ")
@@ -139,7 +198,7 @@ class GraphOllamaTests(unittest.TestCase):
                     result = stage.run(StageContext(input_dir=source, output_dir=root / "output"))
             self.assertFalse(result.success)
             self.assertIn("model not found", result.warnings[0])
-            self.assertFalse((root / "output" / "knowledge_graph.graphml").exists())
+            self.assertFalse((root / "output" / "graph_building" / "knowledge_graph.graphml").exists())
 
 
 if __name__ == "__main__":

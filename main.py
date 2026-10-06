@@ -52,6 +52,7 @@ def main():
     )
 
     current_input = input_dir
+    cleared_input = None
 
     model_path = project_root / "models" / "multilingual-e5-small"
 
@@ -140,12 +141,14 @@ def main():
             input_dir=current_input,
             output_root=output_root,
         )
+        if isinstance(stage, ClearingStage):
+            cleared_input = current_input
 
-    print(f"Graph: {output_root / 'knowledge_graph.graphml'}")
+    print(f"Graph: {current_input / (graph_config.output_filename + graph_config.output_suffix)}")
 
-    run_stage(
+    default_output = run_stage(
         stage=GraphBuildingDefaultStage(
-            GraphBuildingConfig.from_json(
+            GraphBuildingDefaultConfig.from_json(
                 project_root / "configs" / "config.json",
                 ontology_path=(
                     project_root
@@ -164,9 +167,10 @@ def main():
                 ),
             )
         ),
-        input_dir=current_input,
+        input_dir=cleared_input,
         output_root=output_root,
     )
+    print(f"Graph from cleared Markdown: {default_output / 'knowledge_graph.graphml'}")
 
 
 if __name__ == "__main__":

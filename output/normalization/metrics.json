@@ -1,6 +1,6 @@
 {
   "stage": "normalization",
-  "generated_at": "2026-10-05T20:20:59.441153+00:00",
+  "generated_at": "2026-10-06T15:06:12.754736+00:00",
   "meta": {
     "quality_note": "Качественные метрики нормализации пока заглушки. Их можно реализовать через BaseQualityMetric.",
     "expected_quality_metrics": [

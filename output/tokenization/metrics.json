@@ -1,6 +1,6 @@
 {
   "stage": "tokenization",
-  "generated_at": "2026-10-05T20:21:02.871601+00:00",
+  "generated_at": "2026-10-06T15:06:14.416933+00:00",
   "meta": {
     "expected_quality_metrics": [
       "terms_preserved_ratio",

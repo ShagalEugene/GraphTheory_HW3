@@ -1,21 +1,22 @@
 {
-  "stage": "graph_building",
-  "generated_at": "2026-10-06T15:35:20.369119+00:00",
+  "stage": "graph_building_default",
+  "generated_at": "2026-10-06T16:15:51.459376+00:00",
   "meta": {},
   "counters": {
-    "llm_entities_returned": 1090,
-    "llm_relations_returned": 805,
-    "entities_registered": 1069,
-    "dropped_invalid_entity": 21,
-    "dropped_unresolved_target": 26,
-    "dropped_long_quote": 60,
-    "chunks_processed": 169,
-    "relations_added": 360,
-    "dropped_unsupported_quote": 184,
-    "dropped_unresolved_source": 131,
-    "dropped_duplicate_relation": 44,
-    "relations_updated": 10,
-    "files_processed": 2
+    "llm_entities_returned": 1494,
+    "llm_relations_returned": 1103,
+    "entities_registered": 1411,
+    "dropped_invalid_entity": 83,
+    "relations_added": 387,
+    "chunks_processed": 248,
+    "dropped_long_quote": 86,
+    "dropped_unresolved_target": 40,
+    "dropped_unresolved_source": 221,
+    "dropped_unsupported_quote": 325,
+    "dropped_duplicate_relation": 42,
+    "relations_updated": 4,
+    "files_processed": 2,
+    "dropped_missing_quote": 2
   },
   "gauges": {
     "config": {
@@ -35,6 +36,8 @@
       "prompt_file": "C:\\Users\\User\\Desktop\\projects\\GraphTheory_HW3\\configs\\extract.txt",
       "output_filename": "knowledge_graph",
       "output_suffix": ".graphml",
+      "chunk_size_chars": 1400,
+      "chunk_overlap_chars": 200,
       "entity_types": [
         "МАТЕРИАЛ",
         "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ",
@@ -121,37 +124,32 @@
       "reject_english_labels": true
     },
     "input_files": 2,
-    "total_nodes": 453,
-    "total_edges": 325,
+    "total_nodes": 571,
+    "total_edges": 373,
     "nodes_by_type": {
-      "ИЗДЕЛИЕ": 25,
-      "МАТЕРИАЛ": 50,
-      "МИКРОСТРУКТУРА": 67,
-      "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ": 21,
-      "СВОЙСТВО": 54,
-      "ПАРАМЕТР": 90,
-      "ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС": 105,
-      "СОЕДИНЕНИЕ": 41
+      "ИЗДЕЛИЕ": 44,
+      "МАТЕРИАЛ": 51,
+      "ПАРАМЕТР": 106,
+      "СВОЙСТВО": 59,
+      "МИКРОСТРУКТУРА": 108,
+      "СОЕДИНЕНИЕ": 46,
+      "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ": 32,
+      "ТЕХНОЛОГИЧЕСКИЙ_ПРОЦЕСС": 125
     },
     "edges_by_type": {
-      "ПРИМЕНЯЕТСЯ_В": 18,
-      "ВЛИЯЕТ_НА": 43,
-      "ФОРМИРУЕТ": 41,
-      "ПРЕВРАЩАЕТСЯ_В": 24,
-      "УХУДШАЕТ": 23,
-      "УЛУЧШАЕТ": 38,
-      "СОДЕРЖИТ": 74,
-      "ИЗМЕРЯЕТСЯ": 24,
-      "ТРЕБУЕТ": 11,
-      "УСКОРЯЕТ": 12,
-      "ТОРМОЗИТ": 17
-    },
-    "dropped_total": 466
+      "ВЛИЯЕТ_НА": 54,
+      "УЛУЧШАЕТ": 72,
+      "УХУДШАЕТ": 17,
+      "ПРЕВРАЩАЕТСЯ_В": 26,
+      "ИЗМЕРЯЕТСЯ": 21,
+      "ПРИМЕНЯЕТСЯ_В": 35,
+      "ТРЕБУЕТ": 8,
+      "ФОРМИРУЕТ": 47,
+      "СОДЕРЖИТ": 76,
+      "УСКОРЯЕТ": 9,
+      "ТОРМОЗИТ": 8
+    }
   },
-  "quality": {
-    "relations_per_chunk": 2.1301775147928996,
-    "entities_per_chunk": 6.449704142011834,
-    "relation_acceptance_rate": 0.4472049689440994
-  },
+  "quality": {},
   "per_file": []
 }
