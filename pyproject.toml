@@ -6,9 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "steel-pipeline"
 version = "0.1.0"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
-    # text processing
     "beautifulsoup4>=4.12",
     "nltk>=3.8",
     "pymorphy3>=2.0",
@@ -28,6 +27,8 @@ dependencies = [
     "huggingface-hub>=0.23",
     "networkx>=3.0",
     "tqdm>=4.66",
+    "matplotlib (>=3.11.2,<4.0.0)",
+    "pyvis (>=0.3.2,<0.4.0)",
 ]
 
 [tool.setuptools]

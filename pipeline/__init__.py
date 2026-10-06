@@ -5,3 +5,4 @@ from pipeline.chunking import ChunkingStage, ChunkingConfig
 from pipeline.tokenization import TokenizationStage, TokenizationConfig
 from pipeline.vectorization import VectorizationStage, VectorizationConfig
 from pipeline.graph_building import GraphBuildingStage, GraphBuildingConfig
+from pipeline.graph_building_default import GraphBuildingDefaultStage, GraphBuildingDefaultConfig

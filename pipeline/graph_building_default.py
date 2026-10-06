@@ -15,7 +15,7 @@ from tqdm import tqdm
 from .base import BaseStage, MetricsCollector, StageContext
 
 
-LOGGER = logging.getLogger("graph_building")
+LOGGER = logging.getLogger("graph_building_default")
 
 
 def _normalize_label_key(value: str) -> str:
@@ -118,10 +118,11 @@ def _coerce_tuple(value: Any) -> Tuple[str, ...]:
 
 
 @dataclass(frozen=True)
-class GraphBuildingConfig:
+class GraphBuildingDefaultConfig:
     encoding: str = "utf-8"
 
-    llm_ollama_model: str = "qwen3.5:9b-q4_K_M"
+    # Ollama LLM settings
+    llm_ollama_model: str = "qwen2.5:7b-instruct-q4_K_M"
     llm_ollama_url: str = "http://localhost:11434"
     llm_timeout_seconds: float = 600
     llm_keep_alive: str = "30m"
@@ -139,6 +140,10 @@ class GraphBuildingConfig:
 
     output_filename: str = "knowledge_graph"
     output_suffix: str = ".graphml"
+
+    # Chunking settings for raw .md
+    chunk_size_chars: int = 1400
+    chunk_overlap_chars: int = 200
 
     entity_types: Tuple[str, ...] = (
         "МАТЕРИАЛ", "ХИМИЧЕСКИЙ_ЭЛЕМЕНТ", "СОЕДИНЕНИЕ", "МИКРОСТРУКТУРА",
@@ -233,7 +238,7 @@ class GraphBuildingConfig:
         prompt_path: Optional[Union[Path, str]] = None,
         llm_config_path: Optional[Union[Path, str]] = None,
         **overrides: Any,
-    ) -> "GraphBuildingConfig":
+    ) -> "GraphBuildingDefaultConfig":
         data = _read_json(path)
         known_fields = {field.name for field in fields(cls)}
 
@@ -283,11 +288,11 @@ class GraphBuildingConfig:
         return cls(**clean_data)
 
 
-class GraphBuildingStage(BaseStage):
-    name = "graph_building"
+class GraphBuildingDefaultStage(BaseStage):
+    name = "graph_building_default"
 
-    def __init__(self, config: Optional[GraphBuildingConfig] = None) -> None:
-        super().__init__(config or GraphBuildingConfig())
+    def __init__(self, config: Optional[GraphBuildingDefaultConfig] = None) -> None:
+        super().__init__(config or GraphBuildingDefaultConfig())
 
         self._graph: nx.Graph = nx.Graph()
         self._prompt_template: Optional[str] = None
@@ -323,10 +328,7 @@ class GraphBuildingStage(BaseStage):
             )
 
     def list_input_files(self, ctx: StageContext) -> List[Path]:
-        return sorted(
-            path for path in ctx.input_dir.glob("*.vectors.json")
-            if not path.name.endswith(".tables.vectors.json")
-        )
+        return sorted(ctx.input_dir.glob("*.md"))
 
     def run(self, ctx: StageContext) -> Any:
         result = super().run(ctx)
@@ -342,31 +344,24 @@ class GraphBuildingStage(BaseStage):
         output_dir: Path,
         metrics: MetricsCollector,
     ) -> Path:
-        cfg: GraphBuildingConfig = self.config
-        record = json.loads(input_path.read_text(encoding=cfg.encoding))
+        cfg: GraphBuildingDefaultConfig = self.config
 
-        chunks = record.get("chunks", [])
-        if not isinstance(chunks, list):
-            return input_path
+        text = input_path.read_text(encoding=cfg.encoding)
+        chunks = self._split_into_chunks(
+            text=text,
+            chunk_size=cfg.chunk_size_chars,
+            overlap=cfg.chunk_overlap_chars,
+        )
 
-        for chunk in tqdm(
+        for chunk_text in tqdm(
             chunks,
-            desc=f"[graph] {input_path.name.split('.')[0]}",
+            desc=f"[graph_default] {input_path.name}",
             unit="chunk",
             position=1,
             leave=False,
             dynamic_ncols=True,
         ):
-            if not isinstance(chunk, dict):
-                continue
-
-            chunk_text = (
-                chunk.get("dense_text", "")
-                or chunk.get("text", "")
-                or ""
-            ).strip()
-
-            if not chunk_text:
+            if not chunk_text.strip():
                 continue
 
             llm_chunk_text = chunk_text[: cfg.llm_max_context_chars]
@@ -409,6 +404,7 @@ class GraphBuildingStage(BaseStage):
 
             metrics.inc("chunks_processed")
 
+        metrics.inc("files_processed")
         return input_path
 
     def finalize_metrics(self, metrics: MetricsCollector) -> None:
@@ -428,37 +424,47 @@ class GraphBuildingStage(BaseStage):
         metrics.set_gauge("nodes_by_type", node_types)
         metrics.set_gauge("edges_by_type", edge_types)
 
-        chunks_processed = metrics.counters.get("chunks_processed", 0)
-        relations_added = metrics.counters.get("relations_added", 0)
-        relations_returned = metrics.counters.get("llm_relations_returned", 0)
-        entities_returned = metrics.counters.get("llm_entities_returned", 0)
+    def _split_into_chunks(
+        self,
+        text: str,
+        chunk_size: int,
+        overlap: int,
+    ) -> List[str]:
+        if not text:
+            return []
 
-        if chunks_processed:
-            metrics.set_quality("relations_per_chunk", relations_added / chunks_processed)
-            metrics.set_quality("entities_per_chunk", entities_returned / chunks_processed)
-        else:
-            metrics.set_quality("relations_per_chunk", None)
-            metrics.set_quality("entities_per_chunk", None)
+        if len(text) <= chunk_size:
+            return [text]
 
-        if relations_returned:
-            metrics.set_quality("relation_acceptance_rate", relations_added / relations_returned)
-        else:
-            metrics.set_quality("relation_acceptance_rate", None)
+        chunks: List[str] = []
+        start = 0
 
-        dropped_total = sum(
-            metrics.counters.get(k, 0) for k in (
-                "dropped_invalid_entity", "dropped_invalid_relation_type",
-                "dropped_low_weight_relation", "dropped_missing_quote",
-                "dropped_long_quote", "dropped_unsupported_quote",
-                "dropped_unresolved_source", "dropped_unresolved_target",
-                "dropped_self_relation", "dropped_duplicate_relation",
-            )
-        )
+        while start < len(text):
+            end = start + chunk_size
 
-        metrics.set_gauge("dropped_total", dropped_total)
+            if end >= len(text):
+                chunks.append(text[start:])
+                break
+
+            search_region = text[start:end]
+            last_newline = search_region.rfind("\n\n")
+            if last_newline == -1:
+                last_newline = search_region.rfind("\n")
+            if last_newline == -1:
+                last_newline = search_region.rfind(". ")
+            if last_newline == -1:
+                last_newline = search_region.rfind(" ")
+
+            if last_newline > chunk_size // 2:
+                end = start + last_newline
+
+            chunks.append(text[start:end].strip())
+            start = end - overlap if end - overlap > start else end
+
+        return [c for c in chunks if c]
 
     def _load_prompt_template(self, ctx: StageContext) -> None:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
         candidates: List[Path] = []
 
         if cfg.prompt_file:
@@ -484,7 +490,7 @@ class GraphBuildingStage(BaseStage):
                 LOGGER.info("Graph extraction prompt loaded from %s", candidate)
                 return
 
-        LOGGER.error("Graph extraction prompt was not found. Tried: %s", [str(p) for p in candidates])
+        LOGGER.error("Prompt not found. Tried: %s", [str(p) for p in candidates])
         self._prompt_template = None
 
     def _extract_with_llm(self, chunk_text: str) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
@@ -496,7 +502,7 @@ class GraphBuildingStage(BaseStage):
         return self._parse_llm_output(raw_output)
 
     def _render_prompt(self, chunk_text: str) -> str:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
 
         replacements = {
             "{entity_types}": ", ".join(cfg.entity_types),
@@ -516,7 +522,7 @@ class GraphBuildingStage(BaseStage):
         return prompt
 
     def _parse_llm_output(self, text: str) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
 
         entities: List[Dict[str, Any]] = []
         relations: List[Dict[str, Any]] = []
@@ -603,7 +609,7 @@ class GraphBuildingStage(BaseStage):
         aliases: Optional[List[str]] = None,
         evidence: str = "",
     ) -> Optional[Tuple[str, str, str, List[str], str]]:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
 
         entity_type = _normalize_type_name(raw_type)
 
@@ -637,7 +643,7 @@ class GraphBuildingStage(BaseStage):
         aliases: Optional[List[str]] = None,
         evidence: str = "",
     ) -> Optional[str]:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
 
         clean_label = self._clean_label(label)
         clean_label = self._canonicalize_label(clean_label)
@@ -720,7 +726,7 @@ class GraphBuildingStage(BaseStage):
         normalized_chunk: str,
         metrics: MetricsCollector,
     ) -> bool:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
 
         relation_type = _normalize_type_name(relation.get("type", ""))
 
@@ -834,7 +840,7 @@ class GraphBuildingStage(BaseStage):
         return True
 
     def _clean_label(self, value: Any) -> str:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
 
         text = str(value).strip()
         text = text.strip('"').strip("'")
@@ -862,7 +868,7 @@ class GraphBuildingStage(BaseStage):
         return raw
 
     def _is_valid_label(self, label: str) -> bool:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
         text = str(label).strip()
 
         if not text:
@@ -932,7 +938,7 @@ class GraphBuildingStage(BaseStage):
         return normalized_quote in normalized_chunk
 
     def _generate(self, prompt: str) -> str:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
         payload = {
             "model": cfg.llm_ollama_model,
             "messages": [{"role": "user", "content": prompt}],
@@ -988,7 +994,7 @@ class GraphBuildingStage(BaseStage):
         return content
 
     def _save_graphml(self, output_dir: Path) -> None:
-        cfg: GraphBuildingConfig = self.config
+        cfg: GraphBuildingDefaultConfig = self.config
 
         output_dir.mkdir(parents=True, exist_ok=True)
         output_path = output_dir / f"{cfg.output_filename}{cfg.output_suffix}"

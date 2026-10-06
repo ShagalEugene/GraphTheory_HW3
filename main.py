@@ -143,6 +143,31 @@ def main():
 
     print(f"Graph: {output_root / 'knowledge_graph.graphml'}")
 
+    run_stage(
+        stage=GraphBuildingDefaultStage(
+            GraphBuildingConfig.from_json(
+                project_root / "configs" / "config.json",
+                ontology_path=(
+                    project_root
+                    / "configs"
+                    / "ontology.json"
+                ),
+                prompt_path=(
+                    project_root
+                    / "configs"
+                    / "extract.txt"
+                ),
+                llm_config_path=(
+                    project_root
+                    / "configs"
+                    / "llm.json"
+                ),
+            )
+        ),
+        input_dir=current_input,
+        output_root=output_root,
+    )
+
 
 if __name__ == "__main__":
     main()
